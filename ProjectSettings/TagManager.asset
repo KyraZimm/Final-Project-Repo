@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ladder
   - Interactable
+  - Floor
   layers:
   - Default
   - TransparentFX

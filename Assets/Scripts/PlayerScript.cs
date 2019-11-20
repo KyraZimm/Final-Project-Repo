@@ -12,8 +12,9 @@ public class PlayerScript : MonoBehaviour {
 	
 	//movement
 	private static float PlayerSpeed;
+	private static float JumpForce;
 	private static Vector2 Direction;
-	public static bool moveUp;
+	private static bool onFloor;
 	
 	//map attributes
 	//set this as a reference later, instead of manual value
@@ -25,12 +26,15 @@ public class PlayerScript : MonoBehaviour {
 		
 		//set idle values
 		PlayerSpeed = 10;
+		JumpForce = 10;
 			//note - change these values once placeholders are replaced. Set to reference map sprite.
 			MapBoundLeft = -40;
 			MapBoundRight = 40;
-			
-		//reference components
-		
+
+		onFloor = false;
+
+			//reference components
+
 
 	}
 	
@@ -71,14 +75,12 @@ public class PlayerScript : MonoBehaviour {
 		}
 		
 		//"up" function--when standing next to ladder/stairs, player can go up
-		if (moveUp)
+		
+		if (Input.GetKeyDown(KeyCode.UpArrow) && onFloor)
 		{
-			if (Input.GetKey(KeyCode.Space))
-			{
-				Direction = Vector2.up;
-			}
-			
+			Direction += Vector2.up * JumpForce; 
 		}
+			
 		
 		//check player boundaries
 		if (transform.position.x >= MapBoundRight || transform.position.x <= MapBoundLeft)
@@ -86,9 +88,25 @@ public class PlayerScript : MonoBehaviour {
 			Direction = new Vector2(0, 0);
 		}
 
-		transform.Translate(Direction * PlayerSpeed * Time.deltaTime);
-		
-	}
-	
+		var Velocity = Direction * PlayerSpeed;
+		rb.velocity = Velocity;
 
+		//transform.Translate(Direction * PlayerSpeed * Time.deltaTime);
+	}
+
+	private void OnCollisionEnter2D(Collision2D other)
+	{
+		if (other.gameObject.tag == "Floor")
+		{
+			onFloor = true;
+		}
+	}
+
+	private void OnCollisionExit2D(Collision2D other)
+	{
+		if (other.gameObject.tag == "Floor")
+		{
+			onFloor = false;
+		}
+	}
 }
