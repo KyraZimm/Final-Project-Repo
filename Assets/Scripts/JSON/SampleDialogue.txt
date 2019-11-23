@@ -1,0 +1,13 @@
+{
+
+	"FirstLine": "This is the first line of dialogue for this character.",
+
+	"AnswerA": "First Possible Answer",
+
+	"AnswerB": "Second Possible Answer",
+
+	"ResponseA": "This is the response to Answer A.",
+
+	"ResponseB": "This is the response to Answer B."
+
+}

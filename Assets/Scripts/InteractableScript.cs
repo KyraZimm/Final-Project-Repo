@@ -1,29 +1,44 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InteractableScript : MonoBehaviour
 {
-
     private bool interact;
+
+    public TextAsset JSONInteractions;
+    private Interactions interactionList;
+
+    public TMP_Text CareyThoughts;
+
+    [Serializable]
+    public struct Interactions
+    {
+        public string[] Lines;
+    }
 
     void Start()
     {
         //set initial value
         interact = false;
+        
+        //unpack JSON
+        interactionList = JsonUtility.FromJson<Interactions>(JSONInteractions.text);
+
+        CareyThoughts.text = " ";
     }
 
    
     void Update()
     {
         //allow interaction
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (interact)
         {
-            if (interact)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("interaction happens!");
-                //create event that occurs
+                StartCoroutine("ShowThoughts");
             }
         }
     }
@@ -42,5 +57,13 @@ public class InteractableScript : MonoBehaviour
         {
             interact = false;
         }
+    }
+
+    IEnumerator ShowThoughts()
+    {
+        CareyThoughts.text = interactionList.Lines[0];
+        yield return new WaitForSeconds(3);
+        Debug.Log("text should be hidden");
+        CareyThoughts.text = " ";
     }
 }
