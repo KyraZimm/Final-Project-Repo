@@ -57,6 +57,8 @@ public class InteractableScript : MonoBehaviour
         {
             interact = false;
         }
+
+        CareyThoughts.text = " ";
     }
 
     IEnumerator ShowThoughts()
@@ -64,6 +66,6 @@ public class InteractableScript : MonoBehaviour
         CareyThoughts.text = interactionList.Lines[0];
         yield return new WaitForSeconds(3);
         Debug.Log("text should be hidden");
-        CareyThoughts.text = " ";
+        CareyThoughts.text = " "; //ERROR HERE doesn't work
     }
 }
