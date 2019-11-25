@@ -92,7 +92,7 @@ public class CharacterScript : MonoBehaviour
         }
 
         //QUESTION 2 SET
-        if (thisResponse == dialogue.Responses[1])
+        else if (thisResponse == dialogue.Responses[1])
         {
             if (LastButtonClicked == "A")
             {
@@ -107,7 +107,7 @@ public class CharacterScript : MonoBehaviour
         }
         
         //QUESTION 3 SET
-        if (thisResponse == dialogue.Responses[2])
+        else if (thisResponse == dialogue.Responses[2])
         {
             if (LastButtonClicked == "A")
             {
@@ -178,6 +178,6 @@ public class CharacterScript : MonoBehaviour
     {
         AssignDialogueSet("B");
     }
-    
-    
+
+
 }

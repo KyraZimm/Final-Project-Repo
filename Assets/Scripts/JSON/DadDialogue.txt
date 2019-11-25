@@ -5,16 +5,16 @@
 		"Sleep well?",
 		"hm.",
 		"So…How’s school?",
-		"hmm.".
+		"hmm.",
 		"And your friends?",
-		"hmm.".
+		"hmm.",
 		"Thoughts on college?",
-		"hmm.".
+		"hmm.",
 		"See anything interesting on Social Media?",
-		"hmm.".
+		"hmm.",
 		"Any thoughts on a career path?",
-		"hmm.".
-		"Sure, honey."
+		"Sure, honey.",
+		" "
 
 	],
 
@@ -23,11 +23,17 @@
 		"Mornin’.",
 		"As well as I can these days.",
 		"...",
-		"If you don’t mind, I need to use the bathroom, can we talk about this later?"
-		"If you don’t mind, I need to use the bathroom, can we talk about this later?"
-		"If you don’t mind, I need to use the bathroom, can we talk about this later?"
-		"If you don’t mind, I need to use the bathroom, can we talk about this later?"
-		"If you don’t mind, I need to use the bathroom, can we talk about this later?"
+		"If you don’t mind, I need to use the bathroom, can we talk about this later?",
+		"...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        "...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        "...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        "...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        " ",
+        " "
 	],
 	
 	"AnswerB":
@@ -35,11 +41,17 @@
 		" ",
 		" ",
 		" ",
-		"Same as usual."
-		"Same as usual."
-		"Same as usual."
-		"Same as usual."
-		
+		"Same as usual.",
+		" ",
+        "Same as usual.",
+        " ",
+        "Same as usual.",
+		" ",
+        "Same as usual.",
+        " ",
+        "Same as usual.",
+        " ",
+        " "
 	]
 
 	

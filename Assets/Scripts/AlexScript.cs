@@ -87,37 +87,74 @@ public class AlexScript : MonoBehaviour
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                UpdateDialogue(1);
+                UpdateDialogue(2);
             }
         }
 
         //QUESTION 2 SET
-        if (thisResponse == dialogue.Responses[1])
+        else if (thisResponse == dialogue.Responses[1])
         {
             if (LastButtonClicked == "A")
             {
                 //load the dialogue set for Answer A
-                UpdateDialogue(2);
+                UpdateDialogue(3);
             }
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
             }
         }
         
         //QUESTION 3 SET
-        if (thisResponse == dialogue.Responses[2])
+        else if (thisResponse == dialogue.Responses[2])
         {
             if (LastButtonClicked == "A")
             {
-                //load the dialogue set for Answer A
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
             }
             else if (LastButtonClicked == "B")
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
+            }
+        }
+        
+        //QUESTION 4 SET
+        else if (thisResponse == dialogue.Responses[3])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(4);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(4);
+            }
+        }
+        
+        //QUESTION 5 SET
+        else if (thisResponse == dialogue.Responses[4])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(5);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(5);
+            }
+        }
+        
+        //QUESTION 6 SET
+        else if (thisResponse == dialogue.Responses[5])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(6);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(6);
             }
         }
 

@@ -6,8 +6,8 @@
 		"Tell me about it. I hear they’re working on some tech on Uranus that lets you work in your sleep, goes off your subconscious or something. Sound like a good way to disenfranchise workers, but if I sleep just as well, I guess I don’t mind.",
 		"Like brand new. Had a run in with some space pirates in an asteroid belt but our shields held up.",
 		"Never a simple mission, huh?",
-		"That reminds me, once you’ve stretched your legs, you should talk to Marie, she needs you up in comms."
-		
+		"That reminds me, once you’ve stretched your legs, you should talk to Marie, she needs you up in comms.",
+		" "
 
 	],
 	
@@ -18,19 +18,21 @@
 		"How's the ship running?",
 		"Sounds exciting.",
 		"Not for the SS Hyperwave.",
-		"Tell her I’ll be right there."
+		"Tell her I’ll be right there.",
+		" "
 	],
 	
 	"AnswerB":
 	[
-		"I wish I Never had to leave. Being awake sucks."",
+		"I wish I Never had to leave. Being awake sucks.",
+		" ",
+		" ",
 		" ",
 		" ",
 		" ",
 		" ",
 		" ",
 		" "
-
 		
 	]
 }

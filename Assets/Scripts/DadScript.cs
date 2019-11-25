@@ -92,7 +92,7 @@ public class DadScript : MonoBehaviour
         }
 
         //QUESTION 2 SET
-        if (thisResponse == dialogue.Responses[1])
+        else if (thisResponse == dialogue.Responses[1])
         {
             if (LastButtonClicked == "A")
             {
@@ -102,24 +102,168 @@ public class DadScript : MonoBehaviour
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(2);
             }
         }
         
         //QUESTION 3 SET
-        if (thisResponse == dialogue.Responses[2])
+        else if (thisResponse == dialogue.Responses[2])
         {
             if (LastButtonClicked == "A")
             {
                 //load the dialogue set for Answer A
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
             }
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
             }
         }
+        
+        //QUESTION 4 SET
+        else if (thisResponse == dialogue.Responses[3])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(4);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(4);
+            }
+        }
+        
+        //QUESTION 5 SET
+        else if (thisResponse == dialogue.Responses[4])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(5);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(5);
+            }
+        }
+        
+        //QUESTION 6 SET
+        else if (thisResponse == dialogue.Responses[5])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(6);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(6);
+            }
+        }
+        
+        //QUESTION 7 SET
+        else if (thisResponse == dialogue.Responses[6])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(7);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(7);
+            }
+        }
+        
+        //QUESTION 8 SET
+        else if (thisResponse == dialogue.Responses[7])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(8);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(8);
+            }
+        }
+        
+        //QUESTION 9 SET
+        else if (thisResponse == dialogue.Responses[8])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(9);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(9);
+            }
+        }
+        
+        //QUESTION 10 SET
+        else if (thisResponse == dialogue.Responses[9])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(10);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(10);
+            }
+        }
+        
+        //QUESTION 11 SET
+        else if (thisResponse == dialogue.Responses[10])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(11);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(11);
+            }
+        }
+        
+        //QUESTION 12 SET
+        else if (thisResponse == dialogue.Responses[11])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(12);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(12);
+            }
+        }
+        
+        //QUESTION 13 SET
+        else if (thisResponse == dialogue.Responses[12])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(13);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(13);
+            }
+        }
+        
+        //QUESTION 14 SET
+        else if (thisResponse == dialogue.Responses[13])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(14);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(14);
+            }
+        }
+
 
     }
 
