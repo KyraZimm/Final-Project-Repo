@@ -28,8 +28,8 @@ public class PlayerScript : MonoBehaviour {
 		PlayerSpeed = 10;
 		JumpForce = 10;
 			//note - change these values once placeholders are replaced. Set to reference map sprite.
-			MapBoundLeft = -40;
-			MapBoundRight = 40;
+			MapBoundLeft = -50;
+			MapBoundRight = 50;
 
 		onFloor = false;
 
