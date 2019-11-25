@@ -18,13 +18,16 @@ public class Bedroom_Door : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
+        Debug.Log("trigger recognized");
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("player recognized");
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene("Scenes/HallwayScene");
+                Debug.Log("space pressed");
+                SceneManager.LoadScene(1);
             }
         }
     }

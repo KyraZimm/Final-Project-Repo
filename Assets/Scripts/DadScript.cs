@@ -126,7 +126,7 @@ public class DadScript : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                UpdateDialogue(4);
+                UpdateDialogue(12);
             }
             else if (LastButtonClicked == "B")
             {
@@ -152,7 +152,7 @@ public class DadScript : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                UpdateDialogue(6);
+                UpdateDialogue(12);
             }
             else if (LastButtonClicked == "B")
             {
@@ -178,7 +178,7 @@ public class DadScript : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                UpdateDialogue(8);
+                UpdateDialogue(12);
             }
             else if (LastButtonClicked == "B")
             {
@@ -204,7 +204,7 @@ public class DadScript : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                UpdateDialogue(10);
+                UpdateDialogue(12);
             }
             else if (LastButtonClicked == "B")
             {

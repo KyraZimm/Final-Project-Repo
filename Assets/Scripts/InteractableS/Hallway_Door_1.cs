@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hallway_Door_1 : MonoBehaviour
 {
@@ -14,5 +16,16 @@ public class Hallway_Door_1 : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene("Scenes/BedroomScene");
+            }
+        }
     }
 }
