@@ -1,0 +1,38 @@
+{
+	"Responses":
+	[
+		"Good morning, enjoy your cryogenic nap?",
+		"it’s not all bad. You get really, really good at ping pong. And I could recite the whole ships manual to you by memory. I’m sure that’ll help me as a medic somewhere down the line.",
+		"Tell me about it. I hear they’re working on some tech on Uranus that lets you work in your sleep, goes off your subconscious or something. Sound like a good way to disenfranchise workers, but if I sleep just as well, I guess I don’t mind.",
+		"Like brand new. Had a run in with some space pirates in an asteroid belt but our shields held up.",
+		"Never a simple mission, huh?",
+		"That reminds me, once you’ve stretched your legs, you should talk to Marie, she needs you up in comms.",
+		" "
+
+	],
+	
+	"AnswerA":
+	[
+		"Can never get used to the cold. But I guess it beats 10 years of deep space.",
+		"How's the ship running?",
+		"How's the ship running?",
+		"Sounds exciting.",
+		"Not for the SS Hyperwave.",
+		"Tell her I’ll be right there.",
+		" "
+	],
+	
+	"AnswerB":
+	[
+		"I wish I Never had to leave. Being awake sucks.",
+		" ",
+		" ",
+		" ",
+		" ",
+		" ",
+		" ",
+		" ",
+		" "
+		
+	]
+}

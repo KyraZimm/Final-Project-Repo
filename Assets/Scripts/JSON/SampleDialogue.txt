@@ -1,0 +1,28 @@
+{
+	"Responses":
+	[
+		"This is the first line of dialogue for this character.",
+		"This is the second line of dialogue for this character.",
+		"This is the third line of dialogue for this character.",
+		"Etc. Keep copying and pasting these lines down and you'll be fine.",
+		"Just make sure the last item in each class does not have a comma at the end, but all the other lines do."
+	],
+
+	"AnswerA":
+	[
+		"This is Answer A for the first line of dialogue.",
+		"This is Answer A for the second line of dialogue.",
+		"Etc.",
+		"Etc.",
+		"Etc."
+	],
+	
+	"AnswerB":
+	[
+		"This is Answer B for the first line of dialogue.",
+		"This is Answer B for the second line of dialogue.",
+		"Etc.",
+		"Etc.",
+		"Etc."
+	]
+}

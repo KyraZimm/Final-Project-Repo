@@ -1,0 +1,58 @@
+{
+	"Responses":
+	[
+		"Morning.",
+		"Sleep well?",
+		"hm.",
+		"So…How’s school?",
+		"hmm.",
+		"And your friends?",
+		"hmm.",
+		"Thoughts on college?",
+		"hmm.",
+		"See anything interesting on Social Media?",
+		"hmm.",
+		"Any thoughts on a career path?",
+		"Sure, honey.",
+		" "
+
+	],
+
+	"AnswerA":
+	[
+		"Mornin’.",
+		"As well as I can these days.",
+		"...",
+		"If you don’t mind, I need to use the bathroom, can we talk about this later?",
+		"...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        "...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        "...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        "...",
+        "If you don’t mind, I need to use the bathroom, can we talk about this later?",
+        " ",
+        " "
+	],
+	
+	"AnswerB":
+	[
+		" ",
+		" ",
+		" ",
+		"Same as usual.",
+		" ",
+        "Same as usual.",
+        " ",
+        "Same as usual.",
+		" ",
+        "Same as usual.",
+        " ",
+        "Same as usual.",
+        " ",
+        " "
+	]
+
+	
+}
