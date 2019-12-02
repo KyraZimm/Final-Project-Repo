@@ -1,0 +1,66 @@
+{
+	"Responses":
+	[
+		"Well Hi, Sweetie. How was school today?",
+		"Wow, you never ask me how my day was. Who are you and what did you do with Carey? Hahahahaha! Oh, my day was good. Nothing special. Cleaned up the house a bit, ran some errands, you know, the usual. ",
+		"It’s nice when things move smoothly, isn’t it? Need some of that every once in a while!",
+		"If you mean moving on from the mold behind the fridge, you betcha! Nothing gets past my steady hand! Hahaha!",
+		"Well of course, dear. What do you need?",
+		"Sigh, you always do. What do you need now?",
+		"No.",
+		"Because I said so.",
+		"Ha! Right, your father using his tools is the best joke I’ve heard all year.",
+		"Why do you need to go into the storage room?",
+		"Your father hasn’t screwed a screw in ages, why does he need the tools now?",
+		"Then we’ll hire a professional to do that, no need risking his clumsy hands making another hole.",
+		"Do you really need it right now?",
+		"…",
+		"…sigh. Ok. If it’s really important you can go into jen-Imean-the storage room. Just make sure to lock the door behind you when you’re done. And don’t let your father in!",
+		"If it’s not that important, I’d prefer you leave it alone. It’s so messy in there, you’re bound to hurt yourself!",
+		"Is there something else you wanted to talk about, dear?"
+
+
+	],
+
+	"AnswerA":
+	[
+		"It was fine. How was your day?",
+		"That’s good. You seem a little more…cheery than you’ve been in the past.",
+		"Hey, Mom? Would it be ok if I asked you for something?",
+		"I need to go into Jenny’s room.",
+       		 "Why not?",
+        	"Dad needs his toolbox",
+        	"I think he wanted to finish patching up the hole.",
+        	"Yes, it’s for school.",
+		" ",
+		" ",
+		"...",
+		"...",
+		"...",
+		"..."
+
+        	
+        	
+	],
+	
+	"AnswerB":
+	[
+	
+		"Mom, I need something from you.",
+		"I hope you’re finding it easier to move on."
+		"I need the key to the storage room.",
+		"I just need to grab Dad’s tools."
+		"I wanted to grab something I left in there a while back.",
+		" ",
+		"No, but I’d like to grab it now.",
+		" ",
+		" ",
+		" ",
+		" ",
+		" ",
+		" "
+		
+	]
+
+	
+}
