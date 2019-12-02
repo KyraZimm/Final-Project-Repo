@@ -157,7 +157,6 @@ public class AlexScript : MonoBehaviour
                 UpdateDialogue(6);
             }
         }
-
     }
 
     void UpdateDialogue(int NewSet)

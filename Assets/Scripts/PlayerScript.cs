@@ -6,15 +6,12 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour {
 	
 	//attached components
-	public Rigidbody2D rb;
 	public Animator anim;
 	public SpriteRenderer sprite;
 	
 	//movement
 	private static float PlayerSpeed;
-	private static float JumpForce;
 	private static Vector2 Direction;
-	private static bool onFloor;
 	
 	//map attributes
 	//set this as a reference later, instead of manual value
@@ -26,14 +23,6 @@ public class PlayerScript : MonoBehaviour {
 		
 		//set idle values
 		PlayerSpeed = 10;
-		JumpForce = 10;
-			//note - change these values once placeholders are replaced. Set to reference map sprite.
-			MapBoundLeft = -50;
-			MapBoundRight = 50;
-
-		onFloor = false;
-
-			//reference components
 
 
 	}
@@ -73,40 +62,23 @@ public class PlayerScript : MonoBehaviour {
 			Direction = new Vector2(0, 0);
 			anim.SetBool("IsWalking", false);
 		}
-		
-		//"up" function--when standing next to ladder/stairs, player can go up
-		
-		if (Input.GetKeyDown(KeyCode.UpArrow) && onFloor)
-		{
-			Direction += Vector2.up * JumpForce; 
-		}
-			
-		
+
 		//check player boundaries
-		if (transform.position.x >= MapBoundRight || transform.position.x <= MapBoundLeft)
+		if (transform.position.x >= MapBoundRight && Input.GetKey(KeyCode.RightArrow)
+		    || transform.position.x <= MapBoundLeft && Input.GetKey(KeyCode.LeftArrow))
 		{
 			Direction = new Vector2(0, 0);
 		}
 
-		var Velocity = Direction * PlayerSpeed;
-		rb.velocity = Velocity;
-
-		//transform.Translate(Direction * PlayerSpeed * Time.deltaTime);
+		transform.Translate(Direction * PlayerSpeed * Time.deltaTime);
 	}
 
 	private void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.gameObject.tag == "Floor")
 		{
-			onFloor = true;
-		}
-	}
-
-	private void OnCollisionExit2D(Collision2D other)
-	{
-		if (other.gameObject.tag == "Floor")
-		{
-			onFloor = false;
+			MapBoundLeft = -((other.gameObject.transform.localScale.x / 2) - other.gameObject.transform.localPosition.x);
+			MapBoundRight = (other.gameObject.transform.localScale.x / 2) + other.gameObject.transform.localPosition.x;
 		}
 	}
 }
