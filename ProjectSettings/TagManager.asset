@@ -44,18 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: BlackSpace
-    uniqueID: 1115117689
+  - name: BG
+    uniqueID: 3112082125
     locked: 0
-  - name: Planets
-    uniqueID: 2316229735
-    locked: 0
-  - name: Walls and Floor
-    uniqueID: 164347937
-    locked: 0
-  - name: Panel
-    uniqueID: 2969774673
-    locked: 0
-  - name: Interactible Orb
-    uniqueID: 616992659
+  - name: FG
+    uniqueID: 1429751065
     locked: 0
