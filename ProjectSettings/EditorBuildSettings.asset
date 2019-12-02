@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HallwayScene.unity
     guid: 7fedccbd1af3b79479d0732ee21d6388
+  - enabled: 1
+    path: Assets/Scenes/MessHall.unity
+    guid: d15c3a816e302814c8a36264d88b713d
   m_configObjects: {}

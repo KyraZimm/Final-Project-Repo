@@ -47,6 +47,12 @@ TagManager:
   - name: BG
     uniqueID: 3112082125
     locked: 0
+  - name: Planets
+    uniqueID: 3521523801
+    locked: 0
+  - name: Walls and floor
+    uniqueID: 247040269
+    locked: 0
   - name: Carey
     uniqueID: 3403178959
     locked: 0
