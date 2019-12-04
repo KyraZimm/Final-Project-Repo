@@ -18,7 +18,11 @@ public class PlayerScript : MonoBehaviour {
 	public static float MapBoundRight;
 	public static float MapBoundLeft;
 
-	
+	private void Awake()
+	{
+		PlayerPrefs.SetInt("Scene", 0);
+	}
+
 	void Start () {
 		
 		//set idle values

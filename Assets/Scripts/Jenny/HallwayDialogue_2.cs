@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class CharacterScript : MonoBehaviour
+public class HallwayDialogue_2 : MonoBehaviour
 {
     //"turn on" interactions
     public bool interact;
@@ -170,6 +170,5 @@ public class CharacterScript : MonoBehaviour
     {
         AssignDialogueSet("B");
     }
-
-
+    
 }

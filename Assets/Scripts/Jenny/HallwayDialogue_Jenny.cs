@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class CharacterScript : MonoBehaviour
+public class HallwayDialogue_Jenny : MonoBehaviour
 {
     //"turn on" interactions
     public bool interact;
@@ -79,7 +79,7 @@ public class CharacterScript : MonoBehaviour
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                UpdateDialogue(1);
+                UpdateDialogue(3);
             }
         }
 
@@ -94,7 +94,7 @@ public class CharacterScript : MonoBehaviour
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(2);
             }
         }
         
@@ -103,14 +103,41 @@ public class CharacterScript : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                //load the dialogue set for Answer A
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(4);
             }
             else if (LastButtonClicked == "B")
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(4);
             }
+        }
+        
+        //QUESTION 4 SET
+        else if (thisResponse == dialogue.Responses[3])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(4);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(4);
+            }
+        }
+        
+        //QUESTION 5 SET
+        else if (thisResponse == dialogue.Responses[4])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(5);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(5);
+            }
+            
+            //set next scene
+            PlayerPrefs.SetInt("Scene", 1);
         }
 
     }
@@ -133,8 +160,12 @@ public class CharacterScript : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                ResponseText.text = thisResponse;
-                StartCoroutine("ShowAnswers");
+                //only display this text if we're on the correct scene'
+                if (PlayerPrefs.GetInt("Scene") == 2)
+                {
+                    ResponseText.text = thisResponse;
+                    StartCoroutine("ShowAnswers");
+                }
             }
         }
     }
@@ -170,6 +201,4 @@ public class CharacterScript : MonoBehaviour
     {
         AssignDialogueSet("B");
     }
-
-
 }

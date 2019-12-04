@@ -1,0 +1,43 @@
+{
+	"Responses":
+	[
+		"Long time no see, Captain.",
+		"Was that sarcasm I detected? Rude.",
+		"Excuse you—I am always professional. Which is why I’m waiting until after this mission briefing to stuff ten ounces of freeze-dried cake in my mouth.",
+		"Alright, alright, I’m done now. So, a nearby Federation ship sent out a distress beacon about two hours ago. HQ just called us, and they want us to investigate.",
+		"Well, the ship that sent out the beacon is labelled as a Class-D cargo ship that was stolen from the inner ring about two months ago. Which probably means:",
+		"That, or there’s something even worse out there. Something that scares these bandits more than the Federation, or prison.",
+		"I agree. We’re two minutes out from our target—ready to board?",
+		"Lucky us, we’re about to find out. We’re two minutes out from our target—ready to board?",
+		"You sound reluctant, Carey. That isn’t really like you.",
+		"...Alright. Well, I’m going to go prep. Feel free to come join me when you’re ready."	
+	],
+
+	"AnswerA":
+	[
+		"Ha ha.",
+		"You know I outrank you, right?",
+		"You know I outrank you, right?",
+		"So let’s go help them.",
+		"The bandits took a hostage, who finally got free and made the call.",
+		"Spooky.",
+		"We should be careful.",
+		"We should be careful.",
+		"I’m fine.",
+		""
+	],
+	
+	"AnswerB":
+	[
+		"Let’s be professional, Lieutenant.",
+		"Don’t hold out on me. What’s this new mission?",
+		"Don’t hold out on me. What’s this new mission?",
+		"What was the emergency for?",
+		"It’s a trap, and the people who stole the ship are trying to lure us in.",
+		"What do you think it is?",
+		"Maybe we should hang back and survey the site or a while. In case it’s a trap.",
+		"Maybe we should hang back and survey the site or a while. In case it’s a trap.",
+		"I’m just saying, there’s no harm in being cautious.",
+		""
+	]
+}

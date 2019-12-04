@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
+using UnityEngine;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class CharacterScript : MonoBehaviour
+public class MessHallDialogue : MonoBehaviour
 {
+    
     //"turn on" interactions
     public bool interact;
     
@@ -64,6 +65,14 @@ public class CharacterScript : MonoBehaviour
 
     }
     
+
+
+    void Update()
+    {
+
+
+    }
+
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked
@@ -79,7 +88,7 @@ public class CharacterScript : MonoBehaviour
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                UpdateDialogue(1);
+                UpdateDialogue(2);
             }
         }
 
@@ -89,12 +98,12 @@ public class CharacterScript : MonoBehaviour
             if (LastButtonClicked == "A")
             {
                 //load the dialogue set for Answer A
-                UpdateDialogue(2);
+                UpdateDialogue(3);
             }
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
             }
         }
         
@@ -103,13 +112,102 @@ public class CharacterScript : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                //load the dialogue set for Answer A
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
             }
             else if (LastButtonClicked == "B")
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
+            }
+        }
+        
+        //QUESTION 4 SET
+        else if (thisResponse == dialogue.Responses[3])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(4);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(4);
+            }
+        }
+        
+        //QUESTION 5 SET
+        else if (thisResponse == dialogue.Responses[4])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(5);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(5);
+            }
+        }
+        
+        //QUESTION 6 SET
+        else if (thisResponse == dialogue.Responses[5])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(6);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(6);
+            }
+        }
+        
+        //QUESTION 7 SET
+        else if (thisResponse == dialogue.Responses[6])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(7);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(8);
+            }
+        }
+        
+        //QUESTION 8 SET
+        else if (thisResponse == dialogue.Responses[7])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(9);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(9);
+            }
+        }
+        
+        //QUESTION 9 SET
+        else if (thisResponse == dialogue.Responses[8])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(9);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(9);
+            }
+        }
+        
+        //QUESTION 10 SET
+        else if (thisResponse == dialogue.Responses[9])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(10);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(10);
             }
         }
 
