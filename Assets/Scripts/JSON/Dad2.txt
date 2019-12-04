@@ -1,0 +1,45 @@
+{
+
+"Responses":
+	[
+		"Hey Carey, I hate to do this, but I need your help with something",
+		"I’ve been looking for my box of tools everywhere, and I just can’t find them, and I think I left them in…well, your sister’s room.",
+		"Yeah. I don’t have the key. I think you’ll have to ask your mother about that.",
+		"You know she won’t listen to me. Not after putting a hole in the wall.",
+		"I think I was patching up the hole in the wall I accidentally made the night, well…you know.",
+		"Yeah, not one of your dad’s prouder moments.",
+		"You’ll have to forgive me if I wasn’t exactly in a good headspace, dear. Don’t act like you’re the only one taking things well. Haven’t heard anything about your appointments with Dr. Diaz in weeks...",
+		"Look, I know this is a pain in the neck, but I really need those tools and your mom isn’t gonna let me go anywhere near that room. So? Will you Help your Dad out?",
+		"Thank you Carey. I really appreciate it.",
+		"Sure, take all the time you need.",
+		"Honey, you can be rebellious teen any other time, but right now I need your help. Please?",
+		"Please don’t make me yell at you, I’m just as tired of the fights as you are."
+
+	],
+
+"AnswerA":
+	[
+		"What is it dad?",
+		"…oh",
+		"Why don’t you ask her?",
+		"Oh yeah. I remember that.",
+		"Yeah, sure, I’ll talk to mom.",
+        	"Fine.",
+		"Ugh, fine, what is it?"
+       
+	],
+	
+	"AnswerB":
+	[
+		"Not now, dad.",
+		" ",
+		"Why is your Toolbox in her room?",
+		"That was so stupid of you.",
+		"Uh, Can I think this over? There's no way that convo with mom will go smoothly.",
+		"No.",
+		" "
+        
+	]
+
+
+}
