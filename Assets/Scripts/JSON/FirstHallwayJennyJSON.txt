@@ -1,0 +1,31 @@
+{
+	"Responses":
+	[
+		"Ah, so the Captain finally graces us with her presence!",
+		"Morning? We’re in space, Carey.",
+		"Well, <i>Captain</i>, are you ready for our next mission?",
+		"Glad you got some beauty sleep. You’re going to need it for our next mission.",
+		"Go check the computer in your quarters. I’ll send the data over for you to glance at.",
+		"I know."
+	],
+
+	"AnswerA":
+	[
+		"Morning, Lieutenant.",
+		"That’s “Captain Shatterstar” to you.",
+		"Let me just check the systems report first.",
+		"Let me just check the systems report first.",
+		"You’re the best, Lieutenant.",
+		""
+	],
+	
+	"AnswerB":
+	[
+		"I was in cryo-sleep, sue me.",
+		"",
+		"",
+		"",
+		"",
+		""
+	]
+}

@@ -64,14 +64,6 @@ public class CharacterScript : MonoBehaviour
 
     }
     
-
-
-    void Update()
-    {
-
-
-    }
-
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked

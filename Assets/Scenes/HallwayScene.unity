@@ -1389,7 +1389,7 @@ GameObject:
   - component: {fileID: 663099978}
   - component: {fileID: 663099977}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: fantasy a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4612,6 +4612,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe3f3dd65852e949b639ac9f8364309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interact: 0
+  JsonFile: {fileID: 4900000, guid: d12d5b897e414314683837cf8eae7a62, type: 3}
+  dialogue:
+    Responses: []
+    AnswerA: []
+    AnswerB: []
+  ResponseText: {fileID: 51927933}
+  AnswerA: {fileID: 1780558101}
+  AnswerB: {fileID: 1888805375}
 --- !u!61 &1913161340
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4844,7 +4853,7 @@ GameObject:
   - component: {fileID: 1998905810}
   - component: {fileID: 1998905809}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: fantasy b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

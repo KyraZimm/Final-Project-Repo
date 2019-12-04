@@ -79,7 +79,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                UpdateDialogue(1);
+                UpdateDialogue(3);
             }
         }
 
@@ -94,7 +94,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
             else if (LastButtonClicked == "B")
             {
                 //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(2);
             }
         }
         
@@ -103,14 +103,41 @@ public class HallwayDialogue_Jenny : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                //load the dialogue set for Answer A
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(4);
             }
             else if (LastButtonClicked == "B")
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(4);
             }
+        }
+        
+        //QUESTION 4 SET
+        else if (thisResponse == dialogue.Responses[3])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(4);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(4);
+            }
+        }
+        
+        //QUESTION 5 SET
+        else if (thisResponse == dialogue.Responses[4])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(5);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(5);
+            }
+            
+            //set next scene
+            PlayerPrefs.SetInt("Scene", 1);
         }
 
     }
@@ -133,8 +160,11 @@ public class HallwayDialogue_Jenny : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                ResponseText.text = thisResponse;
-                StartCoroutine("ShowAnswers");
+                if (PlayerPrefs.GetInt("Scene") == 0)
+                {
+                    ResponseText.text = thisResponse;
+                    StartCoroutine("ShowAnswers");
+                }
             }
         }
     }
