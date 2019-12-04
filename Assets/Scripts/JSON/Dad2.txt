@@ -22,9 +22,10 @@
 		"What is it dad?",
 		"…oh",
 		"Why don’t you ask her?",
+		" ",
 		"Oh yeah. I remember that.",
 		"Yeah, sure, I’ll talk to mom.",
-        	"Fine.",
+        "Fine.",
 		"Ugh, fine, what is it?"
        
 	],
@@ -34,6 +35,7 @@
 		"Not now, dad.",
 		" ",
 		"Why is your Toolbox in her room?",
+		" ",
 		"That was so stupid of you.",
 		"Uh, Can I think this over? There's no way that convo with mom will go smoothly.",
 		"No.",
