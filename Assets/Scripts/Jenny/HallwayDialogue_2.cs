@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Hallway_Dialogue_2 : MonoBehaviour
+public class HallwayDialogue_2 : MonoBehaviour
 {
     //"turn on" interactions
     public bool interact;
