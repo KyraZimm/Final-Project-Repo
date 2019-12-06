@@ -88,13 +88,11 @@ public class HallwayDialogue_2 : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                //load the dialogue set for Answer A
                 UpdateDialogue(2);
             }
             else if (LastButtonClicked == "B")
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(3);
             }
         }
         
@@ -103,14 +101,27 @@ public class HallwayDialogue_2 : MonoBehaviour
         {
             if (LastButtonClicked == "A")
             {
-                //load the dialogue set for Answer A
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(4);
             }
             else if (LastButtonClicked == "B")
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                UpdateDialogue(4);
             }
+        }
+        
+        //QUESTION 4 SET
+        else if (thisResponse == dialogue.Responses[3])
+        {
+            if (LastButtonClicked == "A")
+            {
+                UpdateDialogue(5);
+            }
+            else if (LastButtonClicked == "B")
+            {
+                UpdateDialogue(5);
+            }
+            
+            PlayerPrefs.SetInt("Scene", 3);
         }
 
     }
@@ -133,8 +144,11 @@ public class HallwayDialogue_2 : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                ResponseText.text = thisResponse;
-                StartCoroutine("ShowAnswers");
+                if (PlayerPrefs.GetInt("Scene") == 2)
+                {
+                    ResponseText.text = thisResponse;
+                    StartCoroutine("ShowAnswers");
+                }
             }
         }
     }

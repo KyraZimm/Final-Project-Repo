@@ -1,0 +1,31 @@
+{
+	"Responses":
+	[
+		"Liked what you saw?",
+		"I’d like to see you outmaneuver three pirate ships in an asteroid belt.",
+		"And it’s held up magnificently. Do you really want to talk about the minutia of emergency ship repair, or do you want to talk about our next assignment?",
+		"And...how would you like me to do that?",
+		"Let’s talk details over some grub—I’m starving. Meet you in the mess hall?",
+		"Whatever. Meet me in the mess hall, and I'll walk you through our next mission."
+	],
+
+	"AnswerA":
+	[
+		"Hardly.",
+		"Did you patch our oxygen leak with duct tape?",
+		"Fine. What’s our next mission?",
+		"…",
+		"I’ll be right over.",
+		"I’ll be right over."
+	],
+	
+	"AnswerB":
+	[
+		"I was only in cryo for six hours. How did you manage to break the entire ship?",
+		"Next time, maybe you should wake me up.",
+		"",
+		"What’s our next mission?",
+		"",
+		""
+	]
+}

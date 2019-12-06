@@ -161,7 +161,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 //only display this text if we're on the correct scene'
-                if (PlayerPrefs.GetInt("Scene") == 2)
+                if (PlayerPrefs.GetInt("Scene") == 0)
                 {
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
