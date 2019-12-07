@@ -76,141 +76,146 @@ public class MessHallDialogue : MonoBehaviour
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked
-        
-        //QUESTION 1 SET
-        if (thisResponse == dialogue.Responses[0])
-        {
-            if (LastButtonClicked == "A")
-            {
-                //load the dialogue set for Answer A
-                UpdateDialogue(1);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                //load the dialogue set for Answer B.
-                UpdateDialogue(2);
-            }
-        }
 
-        //QUESTION 2 SET
-        else if (thisResponse == dialogue.Responses[1])
+        if (PlayerPrefs.GetInt("Scene") == 3)
         {
-            if (LastButtonClicked == "A")
-            {
-                //load the dialogue set for Answer A
-                UpdateDialogue(3);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                //load the dialogue set for Answer B.
-                UpdateDialogue(3);
-            }
-        }
-        
-        //QUESTION 3 SET
-        else if (thisResponse == dialogue.Responses[2])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(3);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(3);
-            }
-        }
-        
-        //QUESTION 4 SET
-        else if (thisResponse == dialogue.Responses[3])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(4);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(4);
-            }
-        }
-        
-        //QUESTION 5 SET
-        else if (thisResponse == dialogue.Responses[4])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(5);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(5);
-            }
-        }
-        
-        //QUESTION 6 SET
-        else if (thisResponse == dialogue.Responses[5])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(6);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(6);
-            }
-        }
-        
-        //QUESTION 7 SET
-        else if (thisResponse == dialogue.Responses[6])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(7);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(8);
-            }
-        }
-        
-        //QUESTION 8 SET
-        else if (thisResponse == dialogue.Responses[7])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(9);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(9);
-            }
-        }
-        
-        //QUESTION 9 SET
-        else if (thisResponse == dialogue.Responses[8])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(9);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(9);
-            }
-        }
-        
-        //QUESTION 10 SET
-        else if (thisResponse == dialogue.Responses[9])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(10);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(10);
-            }
-        }
 
+            //QUESTION 1 SET
+            if (thisResponse == dialogue.Responses[0])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    //load the dialogue set for Answer A
+                    UpdateDialogue(1);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    //load the dialogue set for Answer B.
+                    UpdateDialogue(2);
+                }
+            }
+
+            //QUESTION 2 SET
+            else if (thisResponse == dialogue.Responses[1])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    //load the dialogue set for Answer A
+                    UpdateDialogue(3);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    //load the dialogue set for Answer B.
+                    UpdateDialogue(3);
+                }
+            }
+
+            //QUESTION 3 SET
+            else if (thisResponse == dialogue.Responses[2])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(3);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(3);
+                }
+            }
+
+            //QUESTION 4 SET
+            else if (thisResponse == dialogue.Responses[3])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(4);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(4);
+                }
+            }
+
+            //QUESTION 5 SET
+            else if (thisResponse == dialogue.Responses[4])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(5);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(5);
+                }
+            }
+
+            //QUESTION 6 SET
+            else if (thisResponse == dialogue.Responses[5])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(6);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(6);
+                }
+            }
+
+            //QUESTION 7 SET
+            else if (thisResponse == dialogue.Responses[6])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(8);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(8);
+                }
+            }
+
+            //QUESTION 8 SET
+            else if (thisResponse == dialogue.Responses[7])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(9);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(9);
+                }
+            }
+
+            //QUESTION 9 SET
+            else if (thisResponse == dialogue.Responses[8])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(9);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(9);
+                }
+            }
+
+            //QUESTION 10 SET
+            else if (thisResponse == dialogue.Responses[9])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(10);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(10);
+                }
+                
+                PlayerPrefs.SetInt("Scene", 4);
+            }
+        }
     }
 
     void UpdateDialogue(int NewSet)
@@ -231,8 +236,11 @@ public class MessHallDialogue : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                ResponseText.text = thisResponse;
-                StartCoroutine("ShowAnswers");
+                if (PlayerPrefs.GetInt("Scene") == 3)
+                {
+                    ResponseText.text = thisResponse;
+                    StartCoroutine("ShowAnswers");
+                }
             }
         }
     }

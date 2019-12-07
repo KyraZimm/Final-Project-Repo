@@ -9,9 +9,6 @@ using UnityEngine.UI;
 
 public class HallwayDialogue_2 : MonoBehaviour
 {
-    //"turn on" interactions
-    public bool interact;
-    
     //load dialogue
     public TextAsset JsonFile;
     public Dialogue dialogue;
@@ -36,6 +33,9 @@ public class HallwayDialogue_2 : MonoBehaviour
     private string thisResponse;
     private string thisAnswerA;
     private string thisAnswerB;
+    
+    //player
+    public PlayerScript player;
 
 
     void Start()
@@ -52,7 +52,6 @@ public class HallwayDialogue_2 : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
-        interact = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";
@@ -70,6 +69,8 @@ public class HallwayDialogue_2 : MonoBehaviour
 
         if (PlayerPrefs.GetInt("Scene") == 2)
         {
+
+            player.interacting = true;
 
             //QUESTION 1 SET
             if (thisResponse == dialogue.Responses[0])
@@ -112,6 +113,7 @@ public class HallwayDialogue_2 : MonoBehaviour
                 }
 
                 PlayerPrefs.SetInt("Scene", 3);
+                player.interacting = false;
             }
 
             //QUESTION 4 SET
@@ -127,6 +129,7 @@ public class HallwayDialogue_2 : MonoBehaviour
                 }
 
                 PlayerPrefs.SetInt("Scene", 3);
+                player.interacting = false;
             }
         }
 
@@ -152,6 +155,7 @@ public class HallwayDialogue_2 : MonoBehaviour
             {
                 if (PlayerPrefs.GetInt("Scene") == 2)
                 {
+                    player.interacting = true;
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
                 }

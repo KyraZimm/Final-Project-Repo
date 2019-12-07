@@ -37,6 +37,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
     private string thisAnswerA;
     private string thisAnswerB;
 
+    public PlayerScript player;
 
     void Start()
     {
@@ -70,6 +71,8 @@ public class HallwayDialogue_Jenny : MonoBehaviour
         
         if (PlayerPrefs.GetInt("Scene") == 0)
         {
+
+            player.interacting = true;
 
             //QUESTION 1 SET
             if (thisResponse == dialogue.Responses[0])
@@ -141,7 +144,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
 
                 //set next scene
                 PlayerPrefs.SetInt("Scene", 1);
-                Debug.Log(PlayerPrefs.GetInt("Scene"));
+                player.interacting = false;
             }
         }
     }
@@ -167,6 +170,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
                 //only display this text if we're on the correct scene'
                 if (PlayerPrefs.GetInt("Scene") == 0)
                 {
+                    player.interacting = true;
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
                 }

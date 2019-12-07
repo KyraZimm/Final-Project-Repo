@@ -14,9 +14,11 @@ public class PlayerScript : MonoBehaviour {
 	private static Vector2 Direction;
 	
 	//map attributes
-	//set this as a reference later, instead of manual value
 	public static float MapBoundRight;
 	public static float MapBoundLeft;
+	
+	//interaction
+	public bool interacting;
 	
 
 	void Start () {
@@ -30,9 +32,7 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 		
 		CheckSpeed();
-		
-		Debug.Log(PlayerPrefs.GetInt("Scene"));
-		
+
 	}
 
 	void CheckSpeed()
@@ -41,21 +41,27 @@ public class PlayerScript : MonoBehaviour {
 		//check for left/right key input
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
-			//set direction
-			Direction = Vector2.right;
+			if (interacting == false)
+			{
+				//set direction
+				Direction = Vector2.right;
 			
-			//animation
-			sprite.flipX = false;
-			anim.SetBool("IsWalking", true);
+				//animation
+				sprite.flipX = false;
+				anim.SetBool("IsWalking", true);
+			}
 		}
 		else if (Input.GetKey(KeyCode.LeftArrow))
 		{
-			//set direction
-			Direction = Vector2.left;
+			if (interacting == false)
+			{
+				//set direction
+				Direction = Vector2.left;
 			
-			//animation
-			sprite.flipX = true;
-			anim.SetBool("IsWalking", true);
+				//animation
+				sprite.flipX = true;
+				anim.SetBool("IsWalking", true);
+			}
 		}
 		else
 		{
@@ -67,6 +73,11 @@ public class PlayerScript : MonoBehaviour {
 		//check player boundaries
 		if (transform.position.x >= MapBoundRight && Input.GetKey(KeyCode.RightArrow)
 		    || transform.position.x <= MapBoundLeft && Input.GetKey(KeyCode.LeftArrow))
+		{
+			Direction = new Vector2(0, 0);
+		}
+
+		if (interacting)
 		{
 			Direction = new Vector2(0, 0);
 		}

@@ -34,6 +34,9 @@ public class HallwayDialogue_3 : MonoBehaviour
     private string thisResponse;
     private string thisAnswerA;
     private string thisAnswerB;
+    
+    //reference player element
+    public PlayerScript player;
 
 
     void Start()
@@ -67,8 +70,9 @@ public class HallwayDialogue_3 : MonoBehaviour
         //retrieve next answer/question set for corresponding button clicked
         if (PlayerPrefs.GetInt("Scene") == 4)
         {
+            player.interacting = true;
 
-                //QUESTION 1 SET
+            //QUESTION 1 SET
                 if (thisResponse == dialogue.Responses[0])
                 {
                     if (LastButtonClicked == "A")
@@ -243,6 +247,7 @@ public class HallwayDialogue_3 : MonoBehaviour
                     }
                     
                     PlayerPrefs.SetInt("Scene", 5);
+                    player.interacting = false;
                 }
         }
     }
@@ -266,8 +271,9 @@ public class HallwayDialogue_3 : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 //only display this text if we're on the correct scene'
-                if (PlayerPrefs.GetInt("Scene") == 0)
+                if (PlayerPrefs.GetInt("Scene") == 4)
                 {
+                    player.interacting = true;
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
                 }
