@@ -23,6 +23,7 @@ public class Hallway_Door_2 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                PlayerPrefs.SetInt("LastDoorUsed", 2);
                 SceneManager.LoadScene("Scenes/MessHall");
             }
         }

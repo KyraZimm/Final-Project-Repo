@@ -19,6 +19,7 @@ public class PlayerScript : MonoBehaviour {
 	
 	//interaction
 	public bool interacting;
+	private static bool canAnimate;
 	
 
 	void Start () {
@@ -32,6 +33,16 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 		
 		CheckSpeed();
+		
+		//check for walk animation
+		if (interacting)
+		{
+			canAnimate = false;
+		}
+		else
+		{
+			canAnimate = true;
+		}
 
 	}
 
@@ -45,10 +56,13 @@ public class PlayerScript : MonoBehaviour {
 			{
 				//set direction
 				Direction = Vector2.right;
-			
-				//animation
-				sprite.flipX = false;
-				anim.SetBool("IsWalking", true);
+
+				if (canAnimate)
+				{
+					//animation
+					sprite.flipX = false;
+					anim.SetBool("IsWalking", true);
+				}
 			}
 		}
 		else if (Input.GetKey(KeyCode.LeftArrow))
@@ -57,10 +71,13 @@ public class PlayerScript : MonoBehaviour {
 			{
 				//set direction
 				Direction = Vector2.left;
-			
-				//animation
-				sprite.flipX = true;
-				anim.SetBool("IsWalking", true);
+
+				if (canAnimate)
+				{
+					//animation
+					sprite.flipX = true;
+					anim.SetBool("IsWalking", true);
+				}
 			}
 		}
 		else

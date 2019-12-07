@@ -17,6 +17,7 @@ public class StartButtonScript : MonoBehaviour
     void OnClick()
     {
         PlayerPrefs.SetInt("Scene", 0);
+        PlayerPrefs.SetInt("LastDoorUsed", 2);
         SceneManager.LoadScene("Scenes/HallwayScene");
     }
 }

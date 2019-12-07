@@ -37,6 +37,9 @@ public class MessHallDialogue : MonoBehaviour
     private string thisResponse;
     private string thisAnswerA;
     private string thisAnswerB;
+    
+    //player
+    public PlayerScript player;
 
 
     void Start()
@@ -66,19 +69,14 @@ public class MessHallDialogue : MonoBehaviour
     }
     
 
-
-    void Update()
-    {
-
-
-    }
-
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked
 
         if (PlayerPrefs.GetInt("Scene") == 3)
         {
+
+            player.interacting = true;
 
             //QUESTION 1 SET
             if (thisResponse == dialogue.Responses[0])
@@ -214,6 +212,7 @@ public class MessHallDialogue : MonoBehaviour
                 }
                 
                 PlayerPrefs.SetInt("Scene", 4);
+                player.interacting = true;
             }
         }
     }

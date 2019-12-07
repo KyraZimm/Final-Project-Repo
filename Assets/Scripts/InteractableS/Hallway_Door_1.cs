@@ -24,6 +24,7 @@ public class Hallway_Door_1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                PlayerPrefs.SetInt("LastDoorUsed", 1);
                 SceneManager.LoadScene("Scenes/BedroomScene");
             }
         }
