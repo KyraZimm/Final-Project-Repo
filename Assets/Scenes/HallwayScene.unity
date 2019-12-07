@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36619537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: -10}
+  m_LocalPosition: {x: 0, y: 3, z: -10}
   m_LocalScale: {x: 4.2, y: 4.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1799398308}
@@ -2662,7 +2662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176889974}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: -10}
+  m_LocalPosition: {x: 0, y: 3, z: -10}
   m_LocalScale: {x: 4.2, y: 4.2, z: 1}
   m_Children: []
   m_Father: {fileID: 862581925}
@@ -4530,6 +4530,10 @@ GameObject:
   - component: {fileID: 1913161337}
   - component: {fileID: 1913161340}
   - component: {fileID: 1913161339}
+  - component: {fileID: 1913161341}
+  - component: {fileID: 1913161343}
+  - component: {fileID: 1913161342}
+  - component: {fileID: 1913161344}
   m_Layer: 0
   m_Name: Jenny
   m_TagString: Untagged
@@ -4594,7 +4598,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913161336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.48, y: 1.5799999, z: 0}
+  m_LocalPosition: {x: -2.48, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 213539180}
@@ -4647,6 +4651,73 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.0833755, y: 2.6}
   m_EdgeRadius: 0
+--- !u!114 &1913161341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913161336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71298b705e7c14245a850dc32f864bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interact: 0
+  JsonFile: {fileID: 4900000, guid: d227c4a7b87347b458acc0342a53026e, type: 3}
+  dialogue:
+    Responses: []
+    AnswerA: []
+    AnswerB: []
+  ResponseText: {fileID: 51927933}
+  AnswerA: {fileID: 1780558101}
+  AnswerB: {fileID: 1888805375}
+--- !u!114 &1913161342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913161336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda1c18ed71440046bf6401a7e2341c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1913161343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913161336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189a504afc01f8e4fb5796af40f80f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1329707448}
+--- !u!114 &1913161344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913161336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4d6be77f144b34f8a91b07c28817f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interact: 0
+  JsonFile: {fileID: 4900000, guid: 4cc3fea9d16901049a3ae3881bbe6631, type: 3}
+  dialogue:
+    Responses: []
+    AnswerA: []
+    AnswerB: []
+  ResponseText: {fileID: 51927933}
+  AnswerA: {fileID: 1780558101}
+  AnswerB: {fileID: 1888805375}
 --- !u!1 &1925721453
 GameObject:
   m_ObjectHideFlags: 0

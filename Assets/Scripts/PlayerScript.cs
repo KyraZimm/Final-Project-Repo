@@ -17,17 +17,12 @@ public class PlayerScript : MonoBehaviour {
 	//set this as a reference later, instead of manual value
 	public static float MapBoundRight;
 	public static float MapBoundLeft;
-
-	private void Awake()
-	{
-		PlayerPrefs.SetInt("Scene", 0);
-	}
+	
 
 	void Start () {
 		
 		//set idle values
 		PlayerSpeed = 10;
-
 
 	}
 	
@@ -35,6 +30,8 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 		
 		CheckSpeed();
+		
+		Debug.Log(PlayerPrefs.GetInt("Scene"));
 		
 	}
 

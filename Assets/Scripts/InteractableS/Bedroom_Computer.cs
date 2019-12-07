@@ -40,14 +40,24 @@ public class Bedroom_Computer : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                
+                if (PlayerPrefs.GetInt("Scene") == 1)
+                {
+                    UpdateText();
+                }
             }
+        }
+
+        if (currentSet >= 9)
+        {
+            PlayerPrefs.SetInt("Scene", 2);
         }
     }
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(PlayerPrefs.GetInt("Scene"));
+        
         if (other.gameObject.tag == "Player")
         {
             CheckForUpdate = true;
@@ -59,6 +69,8 @@ public class Bedroom_Computer : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             CheckForUpdate = false;
+            RealityText.text = "";
+            FantasyText.text = "";
         }
     }
 
@@ -70,6 +82,5 @@ public class Bedroom_Computer : MonoBehaviour
         FantasyText.text = CanvasText.Fantasy[nextSet];
 
         currentSet = nextSet;
-
     }
 }
