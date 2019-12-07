@@ -1,0 +1,52 @@
+{
+	"Responses":
+	[
+		"Hey. Ready to take off?",
+		"Alright. Just come back whenever you’re ready.",
+		"Alright. Let’s shove off then...Captain.",
+		"...Do you want to talk about what happened back there?",
+		"I meant with Mom.",
+		"Carey, you can’t keep doing this.",
+		"I bet you would. I bet you would love to keep being Captain Carey Shatterstar, and never have to be Carey Wells again.",
+		"You can't keep running away from reality. And you can't keep pretending things are okay when they're clearly not.",
+		"I think it would help you to just talk about what happened. With me. I mean, it's not like anyone is going to overhear us."
+		"Come on—even in your own imagination, you’re not going to be honest with me?"
+		"Why not?",
+		"...Heh. See, I knew you could do it.",
+		"Come on, Captain. That ship in distress won’t save itself.",
+		"...Fine. I know that’s not what I’m here for. We should probably go answer that distress signal now."
+	],
+
+	"AnswerA":
+	[
+		"Almost.",
+		"",
+		"…",
+		"I swear I’m fine. Just pre-mission jitters.",
+		"…",
+		"I’d prefer it if you address me by rank, Lieutenant.",
+		"Excuse me?",
+		"I really don't want to do that.",
+		"No.",
+		"Because you're not really here.",
+		"...",
+		"",
+		""
+	],
+	
+	"AnswerB":
+	[
+		"Yeah, I think so.",
+		"",
+		"Aye aye, Lieutenant.",
+		"What do you mean?",
+		"Ha...who?",
+		"Keep doing what?",
+		"I think we should focus on the mission at hand.",
+		"What would be the point?",
+		"It doesn't matter.",
+		"",
+		"",
+		""
+	]
+}
