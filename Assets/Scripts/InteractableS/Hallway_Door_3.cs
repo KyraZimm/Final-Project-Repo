@@ -1,18 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Hallway_Door_3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerStay2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.gameObject.tag == "Player")
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (PlayerPrefs.GetInt("Scene") == 5)
+                {
+                    PlayerPrefs.SetInt("LastDoorUsed", 3);
+                }
+            }
+        }
     }
 }

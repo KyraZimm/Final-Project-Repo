@@ -1,0 +1,29 @@
+{
+	"Reality":
+	[
+		"I should probably try to get some homework done.",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"Ugh, I can’t focus on homework. I should go clear my head."
+	],
+
+	"Fantasy":
+	[
+		"",
+		"SS Hyperwave, Records: 1057-8 to 1057-11",
+		"Activity Log:",
+		"1057-8: Attempted boarding by three Class-B pirate vessels. Acting Lieutenant authorized a low-level EMP to stall enemy landing gear.",
+		"Acting Lieutenant then lost the vessels in a brief but thoroughly awesome chase through a nearby asteroid field.",
+		"Maintenance Log:",
+		"1057-8: Starboard side of hull damaged. Life support systems damaged. Oxygen leaks detected in Sectors 2, 7 and 8. Critical failure to fuel line.",
+		"1057-11: Oxygen leaks patched with a regulation polyethylene-rayon fiber blend. Fuel line has been corrected.",
+		"Life support systems remain damaged. Short-term solution: avoid life-threatening situations.",
+		""
+	]
+}

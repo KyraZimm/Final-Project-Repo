@@ -9,9 +9,6 @@ using UnityEngine.UI;
 
 public class HallwayDialogue_2 : MonoBehaviour
 {
-    //"turn on" interactions
-    public bool interact;
-    
     //load dialogue
     public TextAsset JsonFile;
     public Dialogue dialogue;
@@ -36,6 +33,9 @@ public class HallwayDialogue_2 : MonoBehaviour
     private string thisResponse;
     private string thisAnswerA;
     private string thisAnswerB;
+    
+    //player
+    public PlayerScript player;
 
 
     void Start()
@@ -52,7 +52,6 @@ public class HallwayDialogue_2 : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
-        interact = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";
@@ -63,53 +62,74 @@ public class HallwayDialogue_2 : MonoBehaviour
         thisAnswerB = dialogue.AnswerB[0];
 
     }
-    
+
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked
-        
-        //QUESTION 1 SET
-        if (thisResponse == dialogue.Responses[0])
-        {
-            if (LastButtonClicked == "A")
-            {
-                //load the dialogue set for Answer A
-                UpdateDialogue(1);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                //load the dialogue set for Answer B.
-                UpdateDialogue(1);
-            }
-        }
 
-        //QUESTION 2 SET
-        else if (thisResponse == dialogue.Responses[1])
+        if (PlayerPrefs.GetInt("Scene") == 2)
         {
-            if (LastButtonClicked == "A")
+
+            player.interacting = true;
+
+            //QUESTION 1 SET
+            if (thisResponse == dialogue.Responses[0])
             {
-                //load the dialogue set for Answer A
-                UpdateDialogue(2);
+                if (LastButtonClicked == "A")
+                {
+                    //load the dialogue set for Answer A
+                    UpdateDialogue(1);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    //load the dialogue set for Answer B.
+                    UpdateDialogue(1);
+                }
             }
-            else if (LastButtonClicked == "B")
+
+            //QUESTION 2 SET
+            else if (thisResponse == dialogue.Responses[1])
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(2);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(3);
+                }
             }
-        }
-        
-        //QUESTION 3 SET
-        else if (thisResponse == dialogue.Responses[2])
-        {
-            if (LastButtonClicked == "A")
+
+            //QUESTION 3 SET
+            else if (thisResponse == dialogue.Responses[2])
             {
-                //load the dialogue set for Answer A
-                //UpdateDialogue(nextSet);
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(4);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(4);
+                }
+
+                PlayerPrefs.SetInt("Scene", 3);
+                player.interacting = false;
             }
-            else if (LastButtonClicked == "B")
+
+            //QUESTION 4 SET
+            else if (thisResponse == dialogue.Responses[3])
             {
-                //load the dialogue set for Answer B.
-                //UpdateDialogue(nextSet);
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(5);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(5);
+                }
+
+                PlayerPrefs.SetInt("Scene", 3);
+                player.interacting = false;
             }
         }
 
@@ -133,8 +153,12 @@ public class HallwayDialogue_2 : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                ResponseText.text = thisResponse;
-                StartCoroutine("ShowAnswers");
+                if (PlayerPrefs.GetInt("Scene") == 2)
+                {
+                    player.interacting = true;
+                    ResponseText.text = thisResponse;
+                    StartCoroutine("ShowAnswers");
+                }
             }
         }
     }

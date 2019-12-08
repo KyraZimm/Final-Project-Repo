@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 579583361}
   - component: {fileID: 579583363}
   - component: {fileID: 579583362}
+  - component: {fileID: 579583364}
   m_Layer: 5
   m_Name: Fantasy Response
   m_TagString: Untagged
@@ -563,6 +564,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579583360}
   m_CullTransparentMesh: 0
+--- !u!114 &579583364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579583360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &644349575
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +778,7 @@ GameObject:
   - component: {fileID: 1063154268}
   - component: {fileID: 1063154267}
   - component: {fileID: 1063154266}
+  - component: {fileID: 1063154269}
   m_Layer: 5
   m_Name: Response A Reality
   m_TagString: Untagged
@@ -789,8 +803,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.15}
   m_AnchorMax: {x: 0.5, y: 0.25}
-  m_AnchoredPosition: {x: 0, y: 0.3999939}
-  m_SizeDelta: {x: 0, y: 13.899994}
+  m_AnchoredPosition: {x: 0, y: 0.00000453}
+  m_SizeDelta: {x: 0, y: 0.0000076294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1063154266
 MonoBehaviour:
@@ -871,6 +885,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063154264}
   m_CullTransparentMesh: 0
+--- !u!114 &1063154269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063154264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1091846605
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +909,7 @@ GameObject:
   - component: {fileID: 1091846609}
   - component: {fileID: 1091846608}
   - component: {fileID: 1091846607}
+  - component: {fileID: 1091846610}
   m_Layer: 5
   m_Name: Response B Fantasy
   m_TagString: Untagged
@@ -907,8 +934,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 0.1}
-  m_AnchoredPosition: {x: 0, y: 5.850006}
-  m_SizeDelta: {x: 0, y: 12.899994}
+  m_AnchoredPosition: {x: 0, y: -0.3}
+  m_SizeDelta: {x: 0, y: 0.59999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091846607
 MonoBehaviour:
@@ -989,6 +1016,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091846605}
   m_CullTransparentMesh: 0
+--- !u!114 &1091846610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091846605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1123975028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,6 +1499,7 @@ GameObject:
   - component: {fileID: 1426608135}
   - component: {fileID: 1426608137}
   - component: {fileID: 1426608136}
+  - component: {fileID: 1426608138}
   m_Layer: 5
   m_Name: Reality Response
   m_TagString: Untagged
@@ -1605,6 +1645,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426608134}
   m_CullTransparentMesh: 0
+--- !u!114 &1426608138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426608134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1439348544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,6 +1920,7 @@ GameObject:
   - component: {fileID: 1596119574}
   - component: {fileID: 1596119573}
   - component: {fileID: 1596119572}
+  - component: {fileID: 1596119575}
   m_Layer: 5
   m_Name: Response A Fantasy
   m_TagString: Untagged
@@ -1892,8 +1945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.15}
   m_AnchorMax: {x: 1, y: 0.25}
-  m_AnchoredPosition: {x: 0, y: -0.05001831}
-  m_SizeDelta: {x: 0, y: 13.899994}
+  m_AnchoredPosition: {x: 0, y: 0.0000030994}
+  m_SizeDelta: {x: 0, y: 0.0000076294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596119572
 MonoBehaviour:
@@ -1974,6 +2027,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596119570}
   m_CullTransparentMesh: 0
+--- !u!114 &1596119575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596119570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1719723319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,26 +2146,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1739623878 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 49085605306262477, guid: f9c528601e0be804986f0e558ab90947,
-    type: 3}
-  m_PrefabInstance: {fileID: 2108224049}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1739623879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739623878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5e8bbd76e24e6468ffd7ed8cb3733e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  sprite: {fileID: 0}
 --- !u!95 &1739623881 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 49085605306262479, guid: f9c528601e0be804986f0e558ab90947,
@@ -2157,6 +2202,7 @@ GameObject:
   - component: {fileID: 1857902698}
   - component: {fileID: 1857902697}
   - component: {fileID: 1857902696}
+  - component: {fileID: 1857902699}
   m_Layer: 5
   m_Name: Response B Reality
   m_TagString: Untagged
@@ -2181,8 +2227,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.1}
-  m_AnchoredPosition: {x: 0, y: 6}
-  m_SizeDelta: {x: 0, y: 12.899994}
+  m_AnchoredPosition: {x: 0, y: -0.225}
+  m_SizeDelta: {x: 0, y: 0.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1857902696
 MonoBehaviour:
@@ -2263,6 +2309,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857902694}
   m_CullTransparentMesh: 0
+--- !u!114 &1857902699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857902694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1891075784
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -37,6 +37,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
     private string thisAnswerA;
     private string thisAnswerB;
 
+    public PlayerScript player;
 
     void Start()
     {
@@ -68,78 +69,84 @@ public class HallwayDialogue_Jenny : MonoBehaviour
     {
         //retrieve next answer/question set for corresponding button clicked
         
-        //QUESTION 1 SET
-        if (thisResponse == dialogue.Responses[0])
+        if (PlayerPrefs.GetInt("Scene") == 0)
         {
-            if (LastButtonClicked == "A")
-            {
-                //load the dialogue set for Answer A
-                UpdateDialogue(1);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                //load the dialogue set for Answer B.
-                UpdateDialogue(3);
-            }
-        }
 
-        //QUESTION 2 SET
-        else if (thisResponse == dialogue.Responses[1])
-        {
-            if (LastButtonClicked == "A")
-            {
-                //load the dialogue set for Answer A
-                UpdateDialogue(2);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                //load the dialogue set for Answer B.
-                UpdateDialogue(2);
-            }
-        }
-        
-        //QUESTION 3 SET
-        else if (thisResponse == dialogue.Responses[2])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(4);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(4);
-            }
-        }
-        
-        //QUESTION 4 SET
-        else if (thisResponse == dialogue.Responses[3])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(4);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(4);
-            }
-        }
-        
-        //QUESTION 5 SET
-        else if (thisResponse == dialogue.Responses[4])
-        {
-            if (LastButtonClicked == "A")
-            {
-                UpdateDialogue(5);
-            }
-            else if (LastButtonClicked == "B")
-            {
-                UpdateDialogue(5);
-            }
-            
-            //set next scene
-            PlayerPrefs.SetInt("Scene", 1);
-        }
+            player.interacting = true;
 
+            //QUESTION 1 SET
+            if (thisResponse == dialogue.Responses[0])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    //load the dialogue set for Answer A
+                    UpdateDialogue(1);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    //load the dialogue set for Answer B.
+                    UpdateDialogue(3);
+                }
+            }
+
+            //QUESTION 2 SET
+            else if (thisResponse == dialogue.Responses[1])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    //load the dialogue set for Answer A
+                    UpdateDialogue(2);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    //load the dialogue set for Answer B.
+                    UpdateDialogue(2);
+                }
+            }
+
+            //QUESTION 3 SET
+            else if (thisResponse == dialogue.Responses[2])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(4);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(4);
+                }
+            }
+
+            //QUESTION 4 SET
+            else if (thisResponse == dialogue.Responses[3])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(4);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(4);
+                }
+            }
+
+            //QUESTION 5 SET
+            else if (thisResponse == dialogue.Responses[4])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(5);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(5);
+                }
+
+                //set next scene
+                PlayerPrefs.SetInt("Scene", 1);
+                player.interacting = false;
+            }
+        }
     }
 
     void UpdateDialogue(int NewSet)
@@ -161,8 +168,9 @@ public class HallwayDialogue_Jenny : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 //only display this text if we're on the correct scene'
-                if (PlayerPrefs.GetInt("Scene") == 2)
+                if (PlayerPrefs.GetInt("Scene") == 0)
                 {
+                    player.interacting = true;
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
                 }
