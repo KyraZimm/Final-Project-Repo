@@ -1,9 +1,33 @@
 {
 
 "Lines": [
+        "I think I’d do amazingly on a spaceship.",
+        "I’m good under tough, pressure situations like that.",
+        "Shields down? No problem. Airlock broken? I got it. Morale lost? Not with me around. Yeah, I’d be a great captain.",
+        "God, stacy Starbright is so cool.",
+        "Imagine having your awesomeness immortalized forever on a poster.",
+        "Stacey Starbright’s never gonna wake up feeling halfway between life and death, or worrying about school.",
+        "She’s just gonna keep rocking out in the cosmos, fighting dork ass space pirates and looking rad as fuck. Sigh…",
+        "I swear, every day I lose a new sock. Is there a mouse stealing my socks at night?",
+        "Wait, that’s actually kind of cute. What if they use them to make little cushions in their hidey holes?", 
+        "Ok, if that’s what’s happening, that’s ok, anything else is unacceptable.",
+        "Jenny said she would teach me to do a kickflip. Maybe someday…",
+        "Easiest $5 I’ve ever spent.",
+        "Just have to remember not to touch it when it’s on. On the bright side, if I ever fall into a life of crime, I’ll have a way to burn off my fingertips.",
+        "I’m so flaky. I say to myself that I want to learn music, then I buy a guitar before I’ve given it a second thought.",
+        "When was the last time I touched this? May? Of what year?",
+        "Maybe today will finally be the day that I kill my twitter account.",
+        "There’s literally nothing there but misery and bad people…and that one account that posts frogs…maybe it isn’t all bad.",
+        "I remember taking this photo right after the accident. Mom was so insistent we needed to “update” the house, that it needed “redecorating.”,
+        "I wish we could have any photos from before. I wish mom would just talk…",
+        "I really should do something about these flowers. It’s not like anyone else will…",
+        "I remember taking Jenny to this concert. I thought this was her first live show, but she jumped into the pit like she was a pro.",
+        "Oh god, I remember her sneaking off from me and somehow getting drinks. She didn’t even have a fake, how did she do that?
+        "…",
+        "I guess there are a lot of things I never knew about Jenny.",
+"
+	
 
-	"This is a sample interaction."
-
-]
+    ]
 
 }

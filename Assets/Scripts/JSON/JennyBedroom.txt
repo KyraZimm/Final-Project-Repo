@@ -1,0 +1,33 @@
+{
+	"Responses":
+	[
+		"I miss you too.",
+		"You know that I would if I could.",
+		"I love you, Carey. I love you so much.",
+		"I never will. I always be with you. Maybe one day we’ll see each other again.",
+
+	],
+
+	"AnswerA":
+	[
+		"I miss you so much",
+		"Why can’t you just come back to us? I know you’re out there, why can’t you just come back where you belong?",
+		"How, Jenny? How do I know that? It’s been over a year and I have no idea where you are! Not a god damn clue! I thought things were hard before, but now, I—"
+		"…I love you too. More than I ever got the chance to say.",
+		"Please don't leave me",
+		"I will fight every day for that. Forever and always."
+	],
+	
+	"AnswerB":
+	[
+		" ",
+		" ",
+		" ",
+		" ",
+		" ",
+		" ",
+		
+	]
+
+	
+}
