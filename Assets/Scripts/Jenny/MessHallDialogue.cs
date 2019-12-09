@@ -76,7 +76,7 @@ public class MessHallDialogue : MonoBehaviour
         if (PlayerPrefs.GetInt("Scene") == 3)
         {
 
-            player.interacting = true;
+            //player.interacting = true;
 
             //QUESTION 1 SET
             if (thisResponse == dialogue.Responses[0])
@@ -212,7 +212,7 @@ public class MessHallDialogue : MonoBehaviour
                 }
                 
                 PlayerPrefs.SetInt("Scene", 4);
-                player.interacting = true;
+               // player.interacting = false;
             }
         }
     }

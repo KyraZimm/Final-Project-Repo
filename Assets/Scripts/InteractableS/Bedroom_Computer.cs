@@ -11,6 +11,9 @@ public class Bedroom_Computer : MonoBehaviour
     //UI
     public TMP_Text RealityText;
     public TMP_Text FantasyText;
+    
+    //sprite
+    private SpriteRenderer sprite;
 
     //update set
     private int currentSet;
@@ -32,6 +35,7 @@ public class Bedroom_Computer : MonoBehaviour
         currentSet = -1;
         CanvasText = JsonUtility.FromJson<UIText>(JsonFile.text);
         CheckForUpdate = false;
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -47,9 +51,10 @@ public class Bedroom_Computer : MonoBehaviour
             }
         }
 
-        if (currentSet >= 9)
+        if (currentSet >= 10)
         {
             PlayerPrefs.SetInt("Scene", 2);
+            sprite.color = new Color(1, 1, 1, 0);
         }
     }
 

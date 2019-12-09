@@ -319,8 +319,11 @@ public class MomScript : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                ResponseText.text = thisResponse;
-                StartCoroutine("ShowAnswers");
+                if (PlayerPrefs.GetInt("Scene") == 3)
+                {
+                    ResponseText.text = thisResponse;
+                    StartCoroutine("ShowAnswers");
+                }
             }
         }
     }

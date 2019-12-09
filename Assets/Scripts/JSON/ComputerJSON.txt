@@ -10,7 +10,8 @@
 		"",
 		"",
 		"",
-		"Ugh, I can’t focus on homework. I should go clear my head."
+		"Ugh, I can’t focus on homework. I should go clear my head.",
+		""
 	],
 
 	"Fantasy":
@@ -24,6 +25,7 @@
 		"1057-8: Starboard side of hull damaged. Life support systems damaged. Oxygen leaks detected in Sectors 2, 7 and 8. Critical failure to fuel line.",
 		"1057-11: Oxygen leaks patched with a regulation polyethylene-rayon fiber blend. Fuel line has been corrected.",
 		"Life support systems remain damaged. Short-term solution: avoid life-threatening situations.",
+		"",
 		""
 	]
 }

@@ -26,6 +26,7 @@ public class PlayerScript : MonoBehaviour {
 		
 		//set idle values
 		PlayerSpeed = 10;
+		interacting = false;
 
 	}
 	
@@ -43,6 +44,8 @@ public class PlayerScript : MonoBehaviour {
 		{
 			canAnimate = true;
 		}
+		
+		Debug.Log(PlayerPrefs.GetInt("Scene"));
 
 	}
 
