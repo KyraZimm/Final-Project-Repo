@@ -18,14 +18,15 @@ public class PlayerScript : MonoBehaviour {
 	public static float MapBoundLeft;
 	
 	//interaction
-	//public bool interacting;
-	//private static bool canAnimate;
+	public bool interacting;
+	private static bool canAnimate;
 	
 
 	void Start () {
 		
 		//set idle values
 		PlayerSpeed = 10;
+		interacting = false;
 
 	}
 	
@@ -35,7 +36,6 @@ public class PlayerScript : MonoBehaviour {
 		CheckSpeed();
 		
 		//check for walk animation
-		/*
 		if (interacting)
 		{
 			canAnimate = false;
@@ -45,8 +45,7 @@ public class PlayerScript : MonoBehaviour {
 			canAnimate = true;
 		}
 		
-		Debug.Log(interacting);
-		*/
+		Debug.Log(PlayerPrefs.GetInt("Scene"));
 
 	}
 
@@ -56,33 +55,33 @@ public class PlayerScript : MonoBehaviour {
 		//check for left/right key input
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
-			//if (interacting == false)
-			//{
+			if (interacting == false)
+			{
 				//set direction
 				Direction = Vector2.right;
 
-				//if (canAnimate)
-				//{
+				if (canAnimate)
+				{
 					//animation
 					sprite.flipX = false;
 					anim.SetBool("IsWalking", true);
-				//}
-			//}
+				}
+			}
 		}
 		else if (Input.GetKey(KeyCode.LeftArrow))
 		{
-			//if (interacting == false)
-			//{
+			if (interacting == false)
+			{
 				//set direction
 				Direction = Vector2.left;
 
-				//if (canAnimate)
-				//{
+				if (canAnimate)
+				{
 					//animation
 					sprite.flipX = true;
 					anim.SetBool("IsWalking", true);
-				//}
-			//}
+				}
+			}
 		}
 		else
 		{
@@ -98,10 +97,10 @@ public class PlayerScript : MonoBehaviour {
 			Direction = new Vector2(0, 0);
 		}
 
-		//if (interacting)
-		//{
-			//Direction = new Vector2(0, 0);
-		//}
+		if (interacting)
+		{
+			Direction = new Vector2(0, 0);
+		}
 
 		transform.Translate(Direction * PlayerSpeed * Time.deltaTime);
 	}

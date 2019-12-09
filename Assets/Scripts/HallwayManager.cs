@@ -19,6 +19,7 @@ public class HallwayManager : MonoBehaviour
    
     void Start()
     {
+
         //mark door that Carey walks out of
         if (PlayerPrefs.GetInt("LastDoorUsed") == 1)
         {
@@ -39,20 +40,28 @@ public class HallwayManager : MonoBehaviour
 
     void Update()
     {
+        //control scene settings
         if (PlayerPrefs.GetInt("Scene") == 0)
         {
+            Debug.Log("scene is 0");
+            Debug.Log(dadConvo.interactionOver);
+            Debug.Log(jennyConvo.interactionOver);
             if (dadConvo.interactionOver && jennyConvo.interactionOver)
             {
+                Debug.Log("interactions are over");
                 PlayerPrefs.SetInt("Scene", 1);
             }
         }
+        /*
         else if (PlayerPrefs.GetInt("Scene") == 2)
         {
-            if (dadConvo.interactionOver && jennyConvo.interactionOver)
+            if (dadConvo2.interactionOver && jennyConvo2.interactionOver)
             {
                 PlayerPrefs.SetInt("Scene", 3);
             }
         }
+        */
+        
         
     }
 

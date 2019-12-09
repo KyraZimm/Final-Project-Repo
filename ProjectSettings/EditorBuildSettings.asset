@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MessHall.unity
     guid: d15c3a816e302814c8a36264d88b713d
+  - enabled: 1
+    path: Assets/Scenes/JennyBedroom.unity
+    guid: 6a7ff4cc19cb6584c9c95317febd567d
   m_configObjects: {}

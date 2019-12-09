@@ -11,6 +11,7 @@ public class DadScript : MonoBehaviour
 {
     //"turn on" interactions
     public bool interactionOver;
+    public bool interactRunning;
     
     //load dialogue
     public TextAsset JsonFile;
@@ -68,12 +69,6 @@ public class DadScript : MonoBehaviour
     }
     
 
-
-    void Update()
-    {
-
-
-    }
 
     public void AssignDialogueSet(string LastButtonClicked)
     {
@@ -231,6 +226,8 @@ public class DadScript : MonoBehaviour
                 {
                     UpdateDialogue(11);
                 }
+
+                interactionOver = true;
             }
 
             //QUESTION 12 SET
@@ -289,8 +286,11 @@ public class DadScript : MonoBehaviour
                 if (PlayerPrefs.GetInt("Scene") == 0)
                 {
                     //player.interacting = true;
+                    
+                    //update canvas text
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
+                    
                 }
             }
         }

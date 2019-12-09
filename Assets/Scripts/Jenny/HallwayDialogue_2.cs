@@ -121,7 +121,7 @@ public class HallwayDialogue_2 : MonoBehaviour
             {
                 if (LastButtonClicked == "A")
                 {
-                    UpdateDialogue(5);
+                    UpdateDialogue(4);
                 }
                 else if (LastButtonClicked == "B")
                 {

@@ -11,6 +11,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
 {
     //"turn on" interactions
     public bool interactionOver;
+    public bool interactRunning;
     
     //load dialogue
     public TextAsset JsonFile;
@@ -144,6 +145,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
 
                 //set next scene
                 interactionOver = true;
+                
 
                 //player.interacting = false;
             }
@@ -172,8 +174,13 @@ public class HallwayDialogue_Jenny : MonoBehaviour
                 if (PlayerPrefs.GetInt("Scene") == 0)
                 {
                     //player.interacting = true;
+                    
+                    //update canvas text
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
+                    
+                    //flip bools
+                    interactRunning = true;
                 }
             }
         }
