@@ -16,9 +16,5 @@ public class DadPosition : MonoBehaviour
         {
             transform.position = new Vector2(-35, 11.9f);
         }
-        else if (PlayerPrefs.GetInt("Scene") == 4)
-        {
-            transform.position = new Vector2(41, 11.9f);
-        }
     }
 }

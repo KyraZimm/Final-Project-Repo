@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class HallwayDialogue_Jenny : MonoBehaviour
 {
     //"turn on" interactions
-    public bool interact;
+    public bool interactionOver;
     
     //load dialogue
     public TextAsset JsonFile;
@@ -53,7 +53,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
-        interact = false;
+        interactionOver = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";
@@ -68,11 +68,11 @@ public class HallwayDialogue_Jenny : MonoBehaviour
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked
-        
+
+        //player.interacting = true;
+
         if (PlayerPrefs.GetInt("Scene") == 0)
         {
-
-            player.interacting = true;
 
             //QUESTION 1 SET
             if (thisResponse == dialogue.Responses[0])
@@ -143,8 +143,9 @@ public class HallwayDialogue_Jenny : MonoBehaviour
                 }
 
                 //set next scene
-                PlayerPrefs.SetInt("Scene", 1);
-                player.interacting = false;
+                interactionOver = false;
+
+                //player.interacting = false;
             }
         }
     }
@@ -170,7 +171,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
                 //only display this text if we're on the correct scene'
                 if (PlayerPrefs.GetInt("Scene") == 0)
                 {
-                    player.interacting = true;
+                    //player.interacting = true;
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
                 }

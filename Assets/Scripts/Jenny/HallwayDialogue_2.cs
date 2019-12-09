@@ -70,7 +70,7 @@ public class HallwayDialogue_2 : MonoBehaviour
         if (PlayerPrefs.GetInt("Scene") == 2)
         {
 
-            player.interacting = true;
+            //player.interacting = true;
 
             //QUESTION 1 SET
             if (thisResponse == dialogue.Responses[0])
@@ -113,7 +113,7 @@ public class HallwayDialogue_2 : MonoBehaviour
                 }
 
                 PlayerPrefs.SetInt("Scene", 3);
-                player.interacting = false;
+                //player.interacting = false;
             }
 
             //QUESTION 4 SET
@@ -129,7 +129,7 @@ public class HallwayDialogue_2 : MonoBehaviour
                 }
 
                 PlayerPrefs.SetInt("Scene", 3);
-                player.interacting = false;
+                //player.interacting = false;
             }
         }
 
@@ -155,7 +155,7 @@ public class HallwayDialogue_2 : MonoBehaviour
             {
                 if (PlayerPrefs.GetInt("Scene") == 2)
                 {
-                    player.interacting = true;
+                    //player.interacting = true;
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
                 }

@@ -70,7 +70,7 @@ public class HallwayDialogue_3 : MonoBehaviour
         //retrieve next answer/question set for corresponding button clicked
         if (PlayerPrefs.GetInt("Scene") == 4)
         {
-            player.interacting = true;
+            //player.interacting = true;
 
             //QUESTION 1 SET
                 if (thisResponse == dialogue.Responses[0])
@@ -247,7 +247,7 @@ public class HallwayDialogue_3 : MonoBehaviour
                     }
                     
                     PlayerPrefs.SetInt("Scene", 5);
-                    player.interacting = false;
+                    //player.interacting = false;
                 }
         }
     }
@@ -273,7 +273,7 @@ public class HallwayDialogue_3 : MonoBehaviour
                 //only display this text if we're on the correct scene'
                 if (PlayerPrefs.GetInt("Scene") == 4)
                 {
-                    player.interacting = true;
+                   // player.interacting = true;
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");
                 }
