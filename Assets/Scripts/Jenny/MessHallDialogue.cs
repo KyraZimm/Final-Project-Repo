@@ -212,7 +212,7 @@ public class MessHallDialogue : MonoBehaviour
                 }
                 
                 PlayerPrefs.SetInt("Scene", 4);
-                player.interacting = true;
+                player.interacting = false;
             }
         }
     }

@@ -12,17 +12,17 @@ public class HallwayDoorManager : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("LastDoorUsed") == 1)
         {
-            playerR.transform.position = new Vector2(40, 13.4f);
-            playerF.transform.position = new Vector2(40, -13.4f);
+            playerR.transform.position = new Vector2(-40, 11.9f);
+            playerF.transform.position = new Vector2(-40, -13.4f);
         }
         else if (PlayerPrefs.GetInt("LastDoorUsed") == 2)
         {
-            playerR.transform.position = new Vector2(-10, 13.4f);
+            playerR.transform.position = new Vector2(-10, 11.9f);
             playerF.transform.position = new Vector2(-10, -13.4f);
         }
         else if (PlayerPrefs.GetInt("LastDoorUsed") == 3)
         {
-            playerR.transform.position = new Vector2(40, 13.4f);
+            playerR.transform.position = new Vector2(40, 11.9f);
             playerF.transform.position = new Vector2(40, -13.4f);
         }
     }

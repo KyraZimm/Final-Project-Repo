@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hallway_JennyMarker : MonoBehaviour
+public class CharacterMarkerScript : MonoBehaviour
 {
-    public GameObject Jenny;
+    public GameObject Character;
     private SpriteRenderer sprite;
    
     void Start()
@@ -16,7 +16,7 @@ public class Hallway_JennyMarker : MonoBehaviour
     void Update()
     {
         //stay next to Jenny
-        transform.position = new Vector2(Jenny.transform.position.x - 1f, Jenny.transform.position.y + 1f);
+        transform.position = new Vector2(Character.transform.position.x - 1f, Character.transform.position.y + 1f);
         
         //turn it on/off
         if (PlayerPrefs.GetInt("Scene") == 0
