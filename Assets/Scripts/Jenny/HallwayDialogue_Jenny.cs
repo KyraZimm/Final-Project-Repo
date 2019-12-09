@@ -143,7 +143,7 @@ public class HallwayDialogue_Jenny : MonoBehaviour
                 }
 
                 //set next scene
-                interactionOver = false;
+                interactionOver = true;
 
                 //player.interacting = false;
             }
