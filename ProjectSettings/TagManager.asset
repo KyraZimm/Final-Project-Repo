@@ -53,6 +53,9 @@ TagManager:
   - name: Walls and floor
     uniqueID: 247040269
     locked: 0
+  - name: door
+    uniqueID: 2107168153
+    locked: 0
   - name: Carey
     uniqueID: 3403178959
     locked: 0
