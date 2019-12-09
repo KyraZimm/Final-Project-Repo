@@ -24,8 +24,9 @@
         "I remember taking Jenny to this concert. I thought this was her first live show, but she jumped into the pit like she was a pro.",
         "Oh god, I remember her sneaking off from me and somehow getting drinks. She didn’t even have a fake, how did she do that?
         "…",
-        "I guess there are a lot of things I never knew about Jenny.",
-"
+        "I guess there are a lot of things I never knew about Jenny."
+       
+
 	
 
     ]

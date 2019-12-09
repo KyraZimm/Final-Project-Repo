@@ -1,9 +1,11 @@
 {
 	"Responses":
 	[
+	    " ",
 		"I miss you too.",
 		"You know that I would if I could.",
 		"I love you, Carey. I love you so much.",
+		" ",
 		"I never will. I always be with you. Maybe one day we’ll see each other again.",
 
 	],
