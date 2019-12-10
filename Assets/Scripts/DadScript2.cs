@@ -69,7 +69,7 @@ public class DadScript2 : MonoBehaviour
     private void Update()
     {
         //signal end of conversation
-        if (thisResponse == dialogue.Responses[8])
+        if (thisResponse == dialogue.Responses[12])
         {
             interactionOver = true;
         }
@@ -197,11 +197,11 @@ public class DadScript2 : MonoBehaviour
             {
                 if (LastButtonClicked == "A")
                 {
-                    UpdateDialogue(13);
+                    UpdateDialogue(12);
                 }
                 else if (LastButtonClicked == "B")
                 {
-                    UpdateDialogue(13);
+                    UpdateDialogue(12);
                 }
             }
 
@@ -210,11 +210,11 @@ public class DadScript2 : MonoBehaviour
             {
                 if (LastButtonClicked == "A")
                 {
-                    UpdateDialogue(13);
+                    UpdateDialogue(12);
                 }
                 else if (LastButtonClicked == "B")
                 {
-                    UpdateDialogue(13);
+                    UpdateDialogue(12);
                 }
             }
 

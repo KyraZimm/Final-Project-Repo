@@ -13,7 +13,8 @@
 		"Thank you Carey. I really appreciate it.",
 		"Sure, take all the time you need.",
 		"Honey, you can be rebellious teen any other time, but right now I need your help. Please?",
-		"Please don’t make me yell at you, I’m just as tired of the fights as you are."
+		"Please don’t make me yell at you, I’m just as tired of the fights as you are.",
+		""
 
 	],
 
@@ -30,7 +31,8 @@
 		"...",
 		"...",
         "Fine.",
-		"Ugh, fine, what is it?"
+		"Ugh, fine, what is it?",
+		""
        
 	],
 	
@@ -47,7 +49,8 @@
 		" ",
 		" ",
 		"No.",
-		" "
+		" ",
+		""
         
 	]
 
