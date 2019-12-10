@@ -61,8 +61,7 @@ public class HallwayManager : MonoBehaviour
             }
         }
         */
-        
-        
+
     }
 
 }
