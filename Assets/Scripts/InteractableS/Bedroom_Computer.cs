@@ -35,16 +35,20 @@ public class Bedroom_Computer : MonoBehaviour
         currentSet = -1;
         CanvasText = JsonUtility.FromJson<UIText>(JsonFile.text);
         CheckForUpdate = false;
+        
+        //assign sprites
         sprite = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        if (CheckForUpdate)
+
+        if (PlayerPrefs.GetInt("Scene") == 1)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+
+            if (CheckForUpdate)
             {
-                if (PlayerPrefs.GetInt("Scene") == 1)
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     UpdateText();
                 }
@@ -54,7 +58,6 @@ public class Bedroom_Computer : MonoBehaviour
         if (currentSet >= 10)
         {
             PlayerPrefs.SetInt("Scene", 2);
-            sprite.color = new Color(1, 1, 1, 0);
         }
     }
 
