@@ -34,6 +34,9 @@ public class HallwayDialogue_2 : MonoBehaviour
     private string thisAnswerA;
     private string thisAnswerB;
     
+    //turn on interactions
+    public bool interactionOver;
+    
     //player
     public PlayerScript player;
 
@@ -52,6 +55,7 @@ public class HallwayDialogue_2 : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
+        interactionOver = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";
@@ -128,7 +132,7 @@ public class HallwayDialogue_2 : MonoBehaviour
                     UpdateDialogue(5);
                 }
 
-                PlayerPrefs.SetInt("Scene", 3);
+                interactionOver = true;
                 //player.interacting = false;
             }
         }

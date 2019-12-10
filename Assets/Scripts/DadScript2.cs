@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class DadScript2 : MonoBehaviour
 {
     //"turn on" interactions
-    public bool interact;
+    public bool interactionOver;
     
     //load dialogue
     public TextAsset JsonFile;
@@ -52,7 +52,7 @@ public class DadScript2 : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
-        interact = false;
+        interactionOver = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";

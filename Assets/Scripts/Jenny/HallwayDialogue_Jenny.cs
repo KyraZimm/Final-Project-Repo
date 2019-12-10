@@ -129,6 +129,9 @@ public class HallwayDialogue_Jenny : MonoBehaviour
                 {
                     UpdateDialogue(4);
                 }
+                
+                //set next scene
+                interactionOver = true;
             }
 
             //QUESTION 5 SET
@@ -146,7 +149,6 @@ public class HallwayDialogue_Jenny : MonoBehaviour
                 //set next scene
                 interactionOver = true;
                 
-
                 //player.interacting = false;
             }
         }
