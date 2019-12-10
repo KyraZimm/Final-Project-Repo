@@ -22,13 +22,13 @@
 		"What is it dad?",
 		"…oh",
 		"Why don’t you ask her?",
-		" ",
+		"...",
 		"Oh yeah. I remember that.",
-		" ",
-		" ",
+		"...",
+		"...",
 		"Yeah, sure, I’ll talk to mom.",
-		" ",
-		" ",
+		"...",
+		"...",
         "Fine.",
 		"Ugh, fine, what is it?"
        

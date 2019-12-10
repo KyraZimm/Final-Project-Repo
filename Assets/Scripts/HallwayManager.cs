@@ -52,7 +52,7 @@ public class HallwayManager : MonoBehaviour
                 PlayerPrefs.SetInt("Scene", 1);
             }
         }
-        /*
+        
         else if (PlayerPrefs.GetInt("Scene") == 2)
         {
             if (dadConvo2.interactionOver && jennyConvo2.interactionOver)
@@ -60,7 +60,6 @@ public class HallwayManager : MonoBehaviour
                 PlayerPrefs.SetInt("Scene", 3);
             }
         }
-        */
 
     }
 

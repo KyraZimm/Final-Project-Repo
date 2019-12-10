@@ -67,6 +67,14 @@ public class HallwayDialogue_2 : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (thisResponse == dialogue.Responses[6])
+        {
+            interactionOver = true;
+        }
+    }
+
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked
@@ -109,15 +117,13 @@ public class HallwayDialogue_2 : MonoBehaviour
             {
                 if (LastButtonClicked == "A")
                 {
-                    UpdateDialogue(4);
+                    UpdateDialogue(5);
                 }
                 else if (LastButtonClicked == "B")
                 {
-                    UpdateDialogue(4);
+                    UpdateDialogue(5);
                 }
 
-                PlayerPrefs.SetInt("Scene", 3);
-                //player.interacting = false;
             }
 
             //QUESTION 4 SET
@@ -132,8 +138,34 @@ public class HallwayDialogue_2 : MonoBehaviour
                     UpdateDialogue(5);
                 }
 
-                interactionOver = true;
-                //player.interacting = false;
+            }
+            
+            //QUESTION 5 SET
+            else if (thisResponse == dialogue.Responses[4])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(6);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(6);
+                }
+
+            }
+            
+            //QUESTION 6 SET
+            else if (thisResponse == dialogue.Responses[5])
+            {
+                if (LastButtonClicked == "A")
+                {
+                    UpdateDialogue(6);
+                }
+                else if (LastButtonClicked == "B")
+                {
+                    UpdateDialogue(6);
+                }
+
             }
         }
 

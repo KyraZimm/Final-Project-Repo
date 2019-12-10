@@ -63,9 +63,18 @@ public class DadScript2 : MonoBehaviour
         thisAnswerB = dialogue.AnswerB[0];
 
     }
-    
-    
 
+
+
+    private void Update()
+    {
+        //signal end of conversation
+        if (thisResponse == dialogue.Responses[8])
+        {
+            interactionOver = true;
+        }
+    }
+    
     public void AssignDialogueSet(string LastButtonClicked)
     {
         //retrieve next answer/question set for corresponding button clicked
