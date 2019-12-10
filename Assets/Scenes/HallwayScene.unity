@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30439403269e39a41a8c680ca590a24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jenny: {fileID: 1913161336}
+  Character: {fileID: 1913161336}
 --- !u!1 &36619537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30439403269e39a41a8c680ca590a24b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jenny: {fileID: 1913161336}
+  Character: {fileID: 1913161336}
 --- !u!1 &446062213
 GameObject:
   m_ObjectHideFlags: 0
@@ -2836,6 +2836,7 @@ GameObject:
   - component: {fileID: 1048995215}
   - component: {fileID: 1048995216}
   - component: {fileID: 1048995217}
+  - component: {fileID: 1048995218}
   m_Layer: 0
   m_Name: Character Placeholder
   m_TagString: Untagged
@@ -2892,10 +2893,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -891788337
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2c687b38c95fda0469c1ddd364fbd0db, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a05d1f2983ae8c74c906b24c45d2de4e, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2903,7 +2904,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1048995216
@@ -2944,7 +2945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e07e5611dc55f4a9f19ac65dc0be82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interact: 0
+  interactionOver: 0
+  interactRunning: 0
   JsonFile: {fileID: 4900000, guid: 205c0e7c26b10d74e9bc200aef430499, type: 3}
   dialogue:
     Responses: []
@@ -2953,6 +2955,19 @@ MonoBehaviour:
   ResponseText: {fileID: 1378741171}
   AnswerA: {fileID: 1393081999}
   AnswerB: {fileID: 1301049418}
+  player: {fileID: 328823569}
+--- !u!114 &1048995218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048995213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3052c49c7cd501479187513fd76b4b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1090780116 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 49085605306262479, guid: f9c528601e0be804986f0e558ab90947,
@@ -3574,6 +3589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f9db15e9e049b4fadfe120dbbba582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactText: {fileID: 0}
 --- !u!1 &1219181173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,6 +3635,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerR: {fileID: 328823568}
   playerF: {fileID: 1329707448}
+  dadConvo: {fileID: 0}
+  jennyConvo: {fileID: 0}
+  dadConvo2: {fileID: 0}
+  jennyConvo2: {fileID: 0}
 --- !u!1 &1301049416
 GameObject:
   m_ObjectHideFlags: 0
@@ -5604,7 +5624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe3f3dd65852e949b639ac9f8364309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interact: 0
+  interactionOver: 0
+  interactRunning: 0
   JsonFile: {fileID: 4900000, guid: d12d5b897e414314683837cf8eae7a62, type: 3}
   dialogue:
     Responses: []
@@ -5660,6 +5681,7 @@ MonoBehaviour:
   ResponseText: {fileID: 51927933}
   AnswerA: {fileID: 1780558101}
   AnswerB: {fileID: 1888805375}
+  interactionOver: 0
   player: {fileID: 1329707449}
 --- !u!114 &1913161342
 MonoBehaviour:
