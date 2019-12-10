@@ -62,6 +62,8 @@ public class MomScript : MonoBehaviour
         thisAnswerA = dialogue.AnswerA[0];
         thisAnswerB = dialogue.AnswerB[0];
         
+        //changes
+        
     }
     
     
