@@ -67,8 +67,14 @@ public class DadScript : MonoBehaviour
         thisAnswerB = dialogue.AnswerB[0];
 
     }
-    
 
+    private void Update()
+    {
+        if (thisResponse == dialogue.Responses[12])
+        {
+            interactionOver = true;
+        }
+    }
 
     public void AssignDialogueSet(string LastButtonClicked)
     {
@@ -226,8 +232,6 @@ public class DadScript : MonoBehaviour
                 {
                     UpdateDialogue(11);
                 }
-
-                interactionOver = true;
             }
 
             //QUESTION 12 SET
@@ -241,9 +245,7 @@ public class DadScript : MonoBehaviour
                 {
                     UpdateDialogue(12);
                 }
-
-                interactionOver = true;
-                //player.interacting = false;
+                
             }
 
             //QUESTION 13 SET
@@ -257,9 +259,7 @@ public class DadScript : MonoBehaviour
                 {
                     UpdateDialogue(13);
                 }
-
-                interactionOver = true;
-                //player.interacting = false;
+                
 
             }
         }
@@ -285,8 +285,6 @@ public class DadScript : MonoBehaviour
             {
                 if (PlayerPrefs.GetInt("Scene") == 0)
                 {
-                    //player.interacting = true;
-                    
                     //update canvas text
                     ResponseText.text = thisResponse;
                     StartCoroutine("ShowAnswers");

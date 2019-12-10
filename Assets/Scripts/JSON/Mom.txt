@@ -1,6 +1,5 @@
 {
-	"Responses":
-	[
+	"Responses": [
 		"Well Hi, Sweetie. How was school today?",
 		"Wow, you never ask me how my day was. Who are you and what did you do with Carey? Hahahahaha! Oh, my day was good. Nothing special. Cleaned up the house a bit, ran some errands, you know, the usual. ",
 		"It’s nice when things move smoothly, isn’t it? Need some of that every once in a while!",
@@ -22,40 +21,38 @@
 
 	],
 
-	"AnswerA":
-	[
+	"AnswerA": [
 		"It was fine. How was your day?",
 		"That’s good. You seem a little more…cheery than you’ve been in the past.",
 		"Hey, Mom? Would it be ok if I asked you for something?",
 		"Hey, Mom? Would it be ok if I asked you for something?",
 		"I need to go into Jenny’s room.",
 		"I need to go into Jenny’s room.",
-       		"Why not?",
+		"Why not?",
 		" ",
 		" ",
-        	"Dad needs his toolbox",
-        	"I think he wanted to finish patching up the hole.",
+		"Dad needs his toolbox",
+		"I think he wanted to finish patching up the hole.",
 		" ",
-        	"Yes, it’s for school.",
+		"Yes, it’s for school.",
 		" ",
 		" ",
 		" ",
 		"I need to go into Jenny’s room."
 
-        	
-        	
+
+
 	],
-	
-	"AnswerB":
-	[
-	
+
+	"AnswerB": [
+
 		"Mom, I need something from you.",
-		"I hope you’re finding it easier to move on."
+		"I hope you’re finding it easier to move on.",
 		" ",
 		" ",
 		"I need the key to the storage room.",
 		"I need the key to the storage room.",
-		"I just need to grab Dad’s tools."
+		"I just need to grab Dad’s tools.",
 		" ",
 		" ",
 		"I wanted to grab something I left in there a while back.",
@@ -66,7 +63,7 @@
 		" ",
 		" ",
 		"I need the key to the storage room."
-	
+
 	]
-	
+
 }
