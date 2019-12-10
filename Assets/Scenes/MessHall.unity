@@ -499,7 +499,6 @@ GameObject:
   - component: {fileID: 579583361}
   - component: {fileID: 579583363}
   - component: {fileID: 579583362}
-  - component: {fileID: 579583364}
   m_Layer: 5
   m_Name: Fantasy Response
   m_TagString: Untagged
@@ -645,18 +644,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579583360}
   m_CullTransparentMesh: 0
---- !u!114 &579583364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579583360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &644349575
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,7 +2084,6 @@ GameObject:
   - component: {fileID: 1426608135}
   - component: {fileID: 1426608137}
   - component: {fileID: 1426608136}
-  - component: {fileID: 1426608138}
   m_Layer: 5
   m_Name: Reality Response
   m_TagString: Untagged
@@ -2243,18 +2229,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426608134}
   m_CullTransparentMesh: 0
---- !u!114 &1426608138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426608134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1439348544
 GameObject:
   m_ObjectHideFlags: 0
