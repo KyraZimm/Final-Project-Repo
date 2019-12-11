@@ -11,7 +11,7 @@ public class Kitchen_Door_1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene("Scenes/HallwayScene");
+                SceneManager.LoadScene("Scenes/HallwayScene"); 
             }
         }
     }
