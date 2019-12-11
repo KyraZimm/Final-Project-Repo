@@ -33,24 +33,37 @@ public class Flowers : MonoBehaviour
 
     private void Update()
     {
-        if (currentLine > Lines.Length)
+        if (interact)
         {
-            interactText.text = " ";
-        }
-    }
-
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-
-        if (other.gameObject.tag == "Player")
-        {
-            //I found that flipping a bool here and then referencing it in updates glitches less
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 UpdateText();
             }
         }
+        
+        if (currentLine > Lines.Length)
+        {
+            interactText.text = " ";
+            sprite.color = new Color(1, 1, 1, 0);
+        }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.gameObject.tag == "Player")
+        {
+            //I found that flipping a bool here and then referencing it in updates glitches less
+            
+            interact = true;
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        interact = false;
+        interactText.text = " ";
     }
 
     private void UpdateText()
