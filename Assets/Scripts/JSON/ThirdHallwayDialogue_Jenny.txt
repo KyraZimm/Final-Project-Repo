@@ -13,7 +13,8 @@
 		"Why not?",
 		"...Heh. See, I knew you could do it.",
 		"Come on, Captain. That ship in distress won’t save itself.",
-		"...Fine. I know that’s not what I’m here for. We should probably go answer that distress signal now."
+		"...Fine. I know that’s not what I’m here for. We should probably go answer that distress signal now.",
+		""
 	],
 
 	"AnswerA": [
@@ -23,6 +24,7 @@
 		"I swear I’m fine. Just pre-mission jitters.",
 		"…",
 		"I’d prefer it if you address me by rank, Lieutenant.",
+		"Excuse me?",
 		"Excuse me?",
 		"I really don't want to do that.",
 		"No.",
@@ -40,8 +42,10 @@
 		"Ha...who?",
 		"Keep doing what?",
 		"I think we should focus on the mission at hand.",
+		"I think we should focus on the mission at hand.",
 		"What would be the point?",
 		"It doesn't matter.",
+		"...",
 		"",
 		"",
 		""

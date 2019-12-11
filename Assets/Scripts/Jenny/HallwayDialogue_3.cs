@@ -41,8 +41,6 @@ public class HallwayDialogue_3 : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("Scene", 4);
-        
         //unpack JSON
         dialogue = JsonUtility.FromJson<Dialogue>(JsonFile.text);
         
@@ -92,6 +90,11 @@ public class HallwayDialogue_3 : MonoBehaviour
                     {
                         //load the dialogue set for Answer A
                         UpdateDialogue(1);
+                        
+                        //load set for next use
+                        thisResponse = dialogue.Responses[0];
+                        thisAnswerA = dialogue.AnswerA[0];
+                        thisAnswerB = dialogue.AnswerB[0];
                     }
                     else if (LastButtonClicked == "B")
                     {
@@ -108,22 +111,12 @@ public class HallwayDialogue_3 : MonoBehaviour
                         ResponseText.text = "";
                         ButtonAText.text = "";
                         ButtonBText.text = "";
-                        
-                        //load the dialogue set for Answer A
-                        thisResponse = dialogue.Responses[0];
-                        thisAnswerA = dialogue.AnswerA[0];
-                        thisAnswerB = dialogue.AnswerB[0];
                     }
                     else if (LastButtonClicked == "B")
                     {
                         ResponseText.text = "";
                         ButtonAText.text = "";
                         ButtonBText.text = "";
-                        
-                        //load the dialogue set for Answer B.
-                        thisResponse = dialogue.Responses[0];
-                        thisAnswerA = dialogue.AnswerA[0];
-                        thisAnswerB = dialogue.AnswerB[0];
                     }
                 }
 
