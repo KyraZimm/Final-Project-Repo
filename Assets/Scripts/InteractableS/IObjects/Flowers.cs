@@ -13,6 +13,10 @@ public class Flowers : MonoBehaviour
     private int currentLine;
 
     private string[] Lines;
+    
+    private SpriteRenderer sprite;
+
+    private bool interact;
    
     void Start()
     {
