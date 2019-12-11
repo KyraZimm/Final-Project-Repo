@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 
-public class TEMPLATE_interactables : MonoBehaviour
+public class MissingPhoto : MonoBehaviour
 {
     //this is where you reference the TMP element in the UI where you want your text to load
     public TMP_Text interactText;
@@ -20,11 +20,13 @@ public class TEMPLATE_interactables : MonoBehaviour
         currentLine = -1;
         
         //write lines for this marker here
-        Lines = new string[3]; //or however many lines you want this interaction to have
+        Lines = new string[4]; //or however many lines you want this interaction to have
 
-        Lines[0] = "Copy and paste your interactions here.";
-        Lines[1] = "In theory, this should be the only thing you need to do for each script.";
-        Lines[2] = "Then just make sure your reference to the TMP mesh is selected in the inspector.";
+        Lines[0] = "Looks like mom took down the family photo again.";
+        Lines[1] = "I hate when she goes on about needing to 'update' the house, saying it needs 'redecorating'.";
+        Lines[2] = "I wish we could have any photos from before. I wish mom would just talk…";
+        Lines[3] = " ";
+
     }
 
     private void Update()
@@ -38,8 +40,10 @@ public class TEMPLATE_interactables : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
+
         if (other.gameObject.tag == "Player")
         {
+            //I found that flipping a bool here and then referencing it in updates glitches less
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 UpdateText();
