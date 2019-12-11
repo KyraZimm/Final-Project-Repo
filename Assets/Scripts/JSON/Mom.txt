@@ -14,7 +14,7 @@
 		"Then we’ll hire a professional to do that, no need risking his clumsy hands making another hole.",
 		"Do you really need it right now?",
 		"…",
-		"…sigh. Ok. If it’s really important you can go into jen-I mean-the storage room. Just make sure to lock the door behind you when you’re done. And don’t let your father in!",
+		"…sigh. Ok. If it’s really important you can go into Jen-I mean-the storage room. Just make sure to lock the door behind you when you’re done. And don’t let your father in!",
 		"If it’s not that important, I’d prefer you leave it alone. It’s so messy in there, you’re bound to hurt yourself!",
 		"Is there something else you wanted to talk about, dear?"
 

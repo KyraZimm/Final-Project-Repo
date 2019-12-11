@@ -11,7 +11,7 @@ public class MessHallDialogue : MonoBehaviour
 {
     
     //"turn on" interactions
-    public bool interact;
+    public bool interactionOver;
     
     //load dialogue
     public TextAsset JsonFile;
@@ -38,8 +38,6 @@ public class MessHallDialogue : MonoBehaviour
     private string thisAnswerA;
     private string thisAnswerB;
     
-    //player
-    public PlayerScript player;
 
 
     void Start()
@@ -56,7 +54,7 @@ public class MessHallDialogue : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
-        interact = false;
+        interactionOver = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";
@@ -67,7 +65,14 @@ public class MessHallDialogue : MonoBehaviour
         thisAnswerB = dialogue.AnswerB[0];
 
     }
-    
+
+    private void Update()
+    {
+        if (thisResponse == dialogue.Responses[9])
+        {
+            interactionOver = true;
+        }
+    }
 
     public void AssignDialogueSet(string LastButtonClicked)
     {
@@ -211,8 +216,6 @@ public class MessHallDialogue : MonoBehaviour
                     UpdateDialogue(10);
                 }
                 
-                PlayerPrefs.SetInt("Scene", 4);
-               // player.interacting = false;
             }
         }
     }

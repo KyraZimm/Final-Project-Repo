@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class MomScript : MonoBehaviour
 {
     //"turn on" interactions
-    public bool interact;
+    public bool interactionOver;
     
     //load dialogue
     public TextAsset JsonFile;
@@ -52,7 +52,7 @@ public class MomScript : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
-        interact = false;
+        interactionOver = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";
@@ -62,10 +62,15 @@ public class MomScript : MonoBehaviour
         thisAnswerA = dialogue.AnswerA[0];
         thisAnswerB = dialogue.AnswerB[0];
         
-        
     }
     
-    
+    private void Update()
+    {
+        if (thisResponse == dialogue.Responses[14])
+        {
+            interactionOver = true;
+        }
+    }
 
     public void AssignDialogueSet(string LastButtonClicked)
     {

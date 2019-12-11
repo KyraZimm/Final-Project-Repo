@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class KitchenManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    public MomScript momConvo;
+    public MessHallDialogue jennyConvo;
+
+
     void Update()
     {
-        
+        if (momConvo.interactionOver && jennyConvo.interactionOver)
+        {
+            PlayerPrefs.SetInt("Scene", 4);
+        }
     }
 }
