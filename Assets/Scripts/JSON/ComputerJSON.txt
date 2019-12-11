@@ -19,7 +19,7 @@
 		"",
 		"SS Hyperwave, Records: 1057-8 to 1057-11",
 		"Activity Log:",
-		"1057-8: Attempted boarding by three Class-B pirate vessels. Acting Lieutenant authorized a low-level EMP to stall enemy landing gear.",
+		"1057-8: Three Class-B pirate vessels attempted to board SS Hyperwave. Acting Lieutenant authorized a low-level EMP to stall enemy landing gear.",
 		"Acting Lieutenant then lost the vessels in a brief but thoroughly awesome chase through a nearby asteroid field.",
 		"Maintenance Log:",
 		"1057-8: Starboard side of hull damaged. Life support systems damaged. Oxygen leaks detected in Sectors 2, 7 and 8. Critical failure to fuel line.",

@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class HallwayManager : MonoBehaviour
 {
+    
+    //audio
+    public AudioSource audioLeft;
+    public AudioSource audioRight;
+    public AudioClip Door_R;
+    public AudioClip Door_F;
 
+    //player references
     public GameObject playerR;
     public GameObject playerF;
     
@@ -19,6 +26,9 @@ public class HallwayManager : MonoBehaviour
    
     void Start()
     {
+        //play door sound
+        audioLeft.PlayOneShot(Door_R);
+        audioRight.PlayOneShot(Door_F);
 
         //mark door that Carey walks out of
         if (PlayerPrefs.GetInt("LastDoorUsed") == 1)

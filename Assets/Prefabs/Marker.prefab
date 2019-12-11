@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 7466941630584543275}
   - component: {fileID: 7466941630584543272}
   m_Layer: 0
-  m_Name: Interactable Placeholder
+  m_Name: Marker
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,5 +186,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20, y: 40}
+  m_Size: {x: 40, y: 40}
   m_EdgeRadius: 0
