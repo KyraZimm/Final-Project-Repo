@@ -21,6 +21,7 @@ public class Kitchen_TryAgainMarker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(TryAgain);
         if (other.gameObject.tag == "Player")
         {
             if (TryAgain)

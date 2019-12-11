@@ -4001,6 +4001,7 @@ GameObject:
   - component: {fileID: 1048995217}
   - component: {fileID: 1048995218}
   - component: {fileID: 1048995219}
+  - component: {fileID: 1048995220}
   m_Layer: 0
   m_Name: Character Placeholder
   m_TagString: Untagged
@@ -4017,7 +4018,7 @@ Transform:
   m_GameObject: {fileID: 1048995213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2067752836}
   m_RootOrder: 2
@@ -4060,8 +4061,8 @@ SpriteRenderer:
   m_SortingLayerID: -891788337
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a05d1f2983ae8c74c906b24c45d2de4e, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e2c585fa91fc8694caf27d24e874f3e1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4088,14 +4089,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.75, y: 2.7}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6, y: 1}
+  m_Size: {x: 6, y: 3}
   m_EdgeRadius: 0
 --- !u!114 &1048995217
 MonoBehaviour:
@@ -4153,6 +4154,19 @@ MonoBehaviour:
   ResponseText: {fileID: 1378741171}
   AnswerA: {fileID: 1393081999}
   AnswerB: {fileID: 1301049418}
+--- !u!114 &1048995220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048995213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 189a504afc01f8e4fb5796af40f80f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 328823568}
 --- !u!95 &1090780116 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 49085605306262479, guid: f9c528601e0be804986f0e558ab90947,
