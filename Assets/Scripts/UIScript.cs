@@ -6,12 +6,11 @@ using TMPro;
 
 public class UIScript : MonoBehaviour
 {
-    private TMP_Text _text;
+    public TMP_Text _text;
     private Image background;
     
     void Start()
     {
-        _text = GetComponentInChildren<TMP_Text>();
         background = GetComponent<Image>();
     }
 
