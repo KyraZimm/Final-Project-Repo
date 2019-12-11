@@ -76,7 +76,7 @@ public class MomScript : MonoBehaviour
             Debug.Log("mom script over");
             interactionOver = true;
         }
-        /*
+       
         else if (thisResponse == dialogue.Responses[7]
                  || thisResponse == dialogue.Responses[8]
                  || thisResponse == dialogue.Responses[11]
@@ -84,7 +84,9 @@ public class MomScript : MonoBehaviour
         {
             tryAgain.TryAgain = true;
         }
-        */
+
+        Debug.Log(thisResponse);
+
     }
 
     public void AssignDialogueSet(string LastButtonClicked)
