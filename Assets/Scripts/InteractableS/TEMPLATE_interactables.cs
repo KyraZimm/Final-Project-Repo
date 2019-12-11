@@ -40,7 +40,6 @@ public class TEMPLATE_interactables : MonoBehaviour
     {
         if (other.gameObject.tag == " Player")
         {
-            //I found that flipping a bool here and then referencing it in updates glitches less
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 UpdateText();
