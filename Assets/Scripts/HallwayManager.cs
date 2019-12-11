@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HallwayManager : MonoBehaviour
 {
-    
+    //
     //audio
     public AudioSource audioLeft;
     public AudioSource audioRight;
