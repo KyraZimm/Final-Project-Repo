@@ -13,7 +13,8 @@ public class Bedroom_Door : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene(1);
+                PlayerPrefs.SetInt("Scene", 2);
+                SceneManager.LoadScene("Scenes/HallwayScene");
             }
         }
     }
