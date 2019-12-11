@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 
-public class Spaceship : MonoBehaviour
+public class Dresser : MonoBehaviour
 {
     //this is where you reference the TMP element in the UI where you want your text to load
     public TMP_Text interactText;
@@ -20,14 +20,12 @@ public class Spaceship : MonoBehaviour
         currentLine = -1;
         
         //write lines for this marker here
-        Lines = new string[6]; //or however many lines you want this interaction to have
+        Lines = new string[4]; //or however many lines you want this interaction to have
 
-        Lines[0] = "I remember building this model spaceship. took me like, a whole week.";
-        Lines[1] = "You know what? I think I’d do amazingly on a spaceship.";
-        Lines[2] = "I’m good under tough, pressure situations like that.";
-        Lines[3] = "Shields down? No problem. Airlock broken? I got it. Morale lost? Not with me around.";
-        Lines[4] = "Yeah, I’d be a great captain.";
-        Lines[5] = " ";
+        Lines[0] = "I swear, every day I lose a new sock. Is there a mouse stealing my socks at night?";
+        Lines[1] = "Wait, that’s actually kind of cute. What if they use them to make little cushions in their hidey holes?";
+        Lines[2] = "Ok, if that’s what’s happening, that’s ok, anything else is unacceptable.";
+        Lines[3] = " ";
 
     }
 
@@ -44,14 +42,14 @@ public class Spaceship : MonoBehaviour
     {
 
         if (other.gameObject.tag == "Player")
+        {
+            //I found that flipping a bool here and then referencing it in updates glitches less
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                //I found that flipping a bool here and then referencing it in updates glitches less
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    UpdateText();
-                }
+                UpdateText();
             }
         }
+    }
 
     private void UpdateText()
     {

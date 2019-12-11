@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 
-public class Spaceship : MonoBehaviour
+public class MoviePoster : MonoBehaviour
 {
     //this is where you reference the TMP element in the UI where you want your text to load
     public TMP_Text interactText;
@@ -22,11 +22,11 @@ public class Spaceship : MonoBehaviour
         //write lines for this marker here
         Lines = new string[6]; //or however many lines you want this interaction to have
 
-        Lines[0] = "I remember building this model spaceship. took me like, a whole week.";
-        Lines[1] = "You know what? I think I’d do amazingly on a spaceship.";
-        Lines[2] = "I’m good under tough, pressure situations like that.";
-        Lines[3] = "Shields down? No problem. Airlock broken? I got it. Morale lost? Not with me around.";
-        Lines[4] = "Yeah, I’d be a great captain.";
+        Lines[0] = "God, Stacy Starbright is so cool.";
+        Lines[1] = "Imagine having your awesomeness immortalized forever on a poster.";
+        Lines[2] = "Stacey Starbright’s never gonna wake up feeling halfway between life and death, or worrying about school.";
+        Lines[3] = "She’s just gonna keep rocking out in the cosmos, fighting dork ass space pirates and looking rad as fuck.";
+        Lines[4] = "Sigh…";
         Lines[5] = " ";
 
     }
@@ -44,14 +44,14 @@ public class Spaceship : MonoBehaviour
     {
 
         if (other.gameObject.tag == "Player")
+        {
+            //I found that flipping a bool here and then referencing it in updates glitches less
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                //I found that flipping a bool here and then referencing it in updates glitches less
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    UpdateText();
-                }
+                UpdateText();
             }
         }
+    }
 
     private void UpdateText()
     {
