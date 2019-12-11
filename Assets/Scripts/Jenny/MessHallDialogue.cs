@@ -70,6 +70,7 @@ public class MessHallDialogue : MonoBehaviour
     {
         if (thisResponse == dialogue.Responses[9])
         {
+            Debug.Log("jenny mess hall convo over");
             interactionOver = true;
         }
     }

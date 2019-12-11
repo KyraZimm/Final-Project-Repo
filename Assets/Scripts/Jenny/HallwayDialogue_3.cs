@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class HallwayDialogue_3 : MonoBehaviour
 {
     //"turn on" interactions
-    public bool interact;
+    public bool CheckForUpdates;
     
     //load dialogue
     public TextAsset JsonFile;
@@ -41,6 +41,8 @@ public class HallwayDialogue_3 : MonoBehaviour
 
     void Start()
     {
+        PlayerPrefs.SetInt("Scene", 4);
+        
         //unpack JSON
         dialogue = JsonUtility.FromJson<Dialogue>(JsonFile.text);
         
@@ -53,7 +55,7 @@ public class HallwayDialogue_3 : MonoBehaviour
         AnswerB.onClick.AddListener(ClickedB);
         
         //set idle
-        interact = false;
+        CheckForUpdates = false;
         ResponseText.text = " ";
         ButtonAText.text = " ";
         ButtonBText.text = " ";
@@ -63,6 +65,17 @@ public class HallwayDialogue_3 : MonoBehaviour
         thisAnswerA = dialogue.AnswerA[0];
         thisAnswerB = dialogue.AnswerB[0];
 
+    }
+
+    private void Update()
+    {
+        if (CheckForUpdates)
+        {
+            ResponseText.text = thisResponse;
+            StartCoroutine("ShowAnswers");
+
+            CheckForUpdates = false;
+        }
     }
     
     public void AssignDialogueSet(string LastButtonClicked)
@@ -273,9 +286,7 @@ public class HallwayDialogue_3 : MonoBehaviour
                 //only display this text if we're on the correct scene'
                 if (PlayerPrefs.GetInt("Scene") == 4)
                 {
-                   // player.interacting = true;
-                    ResponseText.text = thisResponse;
-                    StartCoroutine("ShowAnswers");
+                    CheckForUpdates = true;
                 }
             }
         }

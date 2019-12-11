@@ -560,7 +560,6 @@ GameObject:
   - component: {fileID: 211434219}
   - component: {fileID: 211434221}
   - component: {fileID: 211434220}
-  - component: {fileID: 211434222}
   m_Layer: 5
   m_Name: Interactable Text
   m_TagString: Untagged
@@ -706,18 +705,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211434218}
   m_CullTransparentMesh: 0
---- !u!114 &211434222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211434218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec1e085598f4fd469e34a52cbc8e684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &213539179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,7 +3584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f9db15e9e049b4fadfe120dbbba582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 211434220}
 --- !u!1 &1219181173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5593,7 +5580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c4d6be77f144b34f8a91b07c28817f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interact: 0
+  CheckForUpdates: 0
   JsonFile: {fileID: 4900000, guid: 4cc3fea9d16901049a3ae3881bbe6631, type: 3}
   dialogue:
     Responses: []

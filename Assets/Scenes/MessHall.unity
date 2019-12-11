@@ -448,78 +448,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &401763312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 401763313}
-  - component: {fileID: 401763314}
-  - component: {fileID: 401763315}
-  m_Layer: 0
-  m_Name: TryAgainMarker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &401763313
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401763312}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.64, y: 3.59, z: -4669.6416}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1750850546}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &401763314
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401763312}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 4}
-  m_EdgeRadius: 0
---- !u!114 &401763315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401763312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a3f594a0503a584e8c9bca12c46f47a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TryAgain: 0
-  interactText: {fileID: 153846330}
 --- !u!1 &448395050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2016,25 @@ MonoBehaviour:
   anim: {fileID: 1739623881}
   sprite: {fileID: 1739623882}
   interacting: 0
+--- !u!1 &1308233003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7466941630224688649, guid: 7649b3e4be04bd744aaf2f4ebacdec26,
+    type: 3}
+  m_PrefabInstance: {fileID: 957446975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1308233004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308233003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b6baa257bec1f4e9f55bd6cde9e372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Character: {fileID: 0}
 --- !u!1 &1382670087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,8 +2897,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542ec6b1a4fccde41bdb39117c981c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  momConvo: {fileID: 0}
-  jennyConvo: {fileID: 0}
+  momConvo: {fileID: 1810887513}
+  jennyConvo: {fileID: 461293040}
 --- !u!4 &1566373426
 Transform:
   m_ObjectHideFlags: 0
@@ -3347,7 +3294,6 @@ Transform:
   - {fileID: 385617823}
   - {fileID: 1899390376}
   - {fileID: 1693231232}
-  - {fileID: 401763313}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3594,7 +3540,7 @@ MonoBehaviour:
   ResponseText: {fileID: 1426608136}
   AnswerA: {fileID: 1063154266}
   AnswerB: {fileID: 1857902696}
-  tryAgain: {fileID: 401763315}
+  tryAgain: {fileID: 0}
 --- !u!1 &1857902694
 GameObject:
   m_ObjectHideFlags: 0

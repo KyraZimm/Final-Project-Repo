@@ -71,6 +71,7 @@ public class MomScript : MonoBehaviour
     {
         if (thisResponse == dialogue.Responses[14])
         {
+            Debug.Log("mom script over");
             interactionOver = true;
         }
         /*

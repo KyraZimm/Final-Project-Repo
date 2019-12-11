@@ -18,7 +18,7 @@ public class JennyPosition : MonoBehaviour
         }
         else if (PlayerPrefs.GetInt("Scene") == 4)
         {
-            transform.position = new Vector2(41, -13.4f);
+            transform.position = new Vector2(35, -13.4f);
         }
     }
 }
