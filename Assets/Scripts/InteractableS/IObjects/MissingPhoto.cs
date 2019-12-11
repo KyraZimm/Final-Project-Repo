@@ -7,6 +7,8 @@ using UnityEngine.Experimental.PlayerLoop;
 
 public class MissingPhoto : MonoBehaviour
 {
+   
+  
     //this is where you reference the TMP element in the UI where you want your text to load
     public TMP_Text interactText;
 

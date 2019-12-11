@@ -7,6 +7,7 @@ using UnityEngine.Experimental.PlayerLoop;
 
 public class SkateBoard : MonoBehaviour
 {
+    public GameObject Answer_A;
     //this is where you reference the TMP element in the UI where you want your text to load
     public TMP_Text interactText;
 
@@ -45,6 +46,7 @@ public class SkateBoard : MonoBehaviour
             //I found that flipping a bool here and then referencing it in updates glitches less
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                Answer_A.SetActive(true);
                 UpdateText();
             }
         }

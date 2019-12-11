@@ -7,6 +7,7 @@ using UnityEngine.Experimental.PlayerLoop;
 
 public class Dresser : MonoBehaviour
 {
+    public GameObject Answer_A;
     //this is where you reference the TMP element in the UI where you want your text to load
     public TMP_Text interactText;
 
@@ -41,6 +42,7 @@ public class Dresser : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                Answer_A.SetActive(true);
                 UpdateText();
             }
         }
