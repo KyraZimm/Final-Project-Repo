@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class Hallway_Door_1 : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class Hallway_Door_1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                
                 PlayerPrefs.SetInt("LastDoorUsed", 1);
                 SceneManager.LoadScene("Scenes/BedroomScene");
             }
