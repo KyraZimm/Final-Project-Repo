@@ -3803,12 +3803,12 @@ PrefabInstance:
     - target: {fileID: 7466941630584543272, guid: 7649b3e4be04bd744aaf2f4ebacdec26,
         type: 3}
       propertyPath: m_Size.x
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7466941630584543272, guid: 7649b3e4be04bd744aaf2f4ebacdec26,
         type: 3}
       propertyPath: m_Size.y
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7649b3e4be04bd744aaf2f4ebacdec26, type: 3}
