@@ -14,9 +14,13 @@ public class LavaLamp : MonoBehaviour
     private int currentLine;
 
     private string[] Lines;
+    
+    private bool interact;
    
     void Start()
     {
+        interact = false;
+        
         //set idle
         currentLine = -1;
         
@@ -32,6 +36,15 @@ public class LavaLamp : MonoBehaviour
 
     private void Update()
     {
+        if (interact)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Answer_A.SetActive(true);
+                UpdateText();
+            }
+        }
+        
         if (currentLine > Lines.Length)
         {
             interactText.text = " ";
@@ -39,18 +52,21 @@ public class LavaLamp : MonoBehaviour
     }
 
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
 
         if (other.gameObject.tag == "Player")
         {
             //I found that flipping a bool here and then referencing it in updates glitches less
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Answer_A.SetActive(true);
-                UpdateText();
-            }
+            
+            interact = true;
         }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        interact = false;
+        interactText.text = " ";
     }
 
     private void UpdateText()
