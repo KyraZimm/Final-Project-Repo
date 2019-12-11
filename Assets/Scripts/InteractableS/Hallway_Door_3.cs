@@ -17,7 +17,7 @@ public class Hallway_Door_3 : MonoBehaviour
                 if (PlayerPrefs.GetInt("Scene") == 5)
                 {
                     PlayerPrefs.SetInt("LastDoorUsed", 3);
-                    SceneManager.LoadScene("Scenes/JennyBedroom");
+                    SceneManager.LoadScene("Scenes/GameEnd");
                 }
                 else
                 {
