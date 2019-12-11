@@ -11,9 +11,12 @@ public class KitchenManager : MonoBehaviour
 
     void Update()
     {
-        if (momConvo.interactionOver && jennyConvo.interactionOver)
+        if (PlayerPrefs.GetInt("Scene") == 3)
         {
-            PlayerPrefs.SetInt("Scene", 4);
+            if (momConvo.interactionOver && jennyConvo.interactionOver)
+            {
+                PlayerPrefs.SetInt("Scene", 4);
+            }
         }
     }
 }
