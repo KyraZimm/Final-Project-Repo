@@ -292,6 +292,8 @@ public class MomScript : MonoBehaviour
             {
                 UpdateDialogue(17);
             }
+
+            interactionOver = true;
         }
         
         //QUESTION 16 SET
