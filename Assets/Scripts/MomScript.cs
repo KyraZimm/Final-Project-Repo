@@ -36,7 +36,10 @@ public class MomScript : MonoBehaviour
     private string thisResponse;
     private string thisAnswerA;
     private string thisAnswerB;
-
+    
+    //turn on "try again" interaction
+    public Kitchen_TryAgainMarker tryAgain;
+    
 
     void Start()
     {
@@ -69,6 +72,13 @@ public class MomScript : MonoBehaviour
         if (thisResponse == dialogue.Responses[14])
         {
             interactionOver = true;
+        }
+        else if (thisResponse == dialogue.Responses[7]
+                 || thisResponse == dialogue.Responses[8]
+                 || thisResponse == dialogue.Responses[11]
+                 || thisResponse == dialogue.Responses[15])
+        {
+            tryAgain.TryAgain = true;
         }
     }
 
@@ -302,8 +312,6 @@ public class MomScript : MonoBehaviour
                 UpdateDialogue(9);
             }
         }
-        
-
 
     }
 
@@ -341,6 +349,14 @@ public class MomScript : MonoBehaviour
             ResponseText.text = " ";
             ButtonAText.text = " ";
             ButtonBText.text = " ";
+
+            //if conversation has ended without conclusion, reset text
+            if (thisResponse == dialogue.Responses[17])
+            {
+                thisResponse = dialogue.Responses[0];
+                thisAnswerA = dialogue.AnswerA[0];
+                thisAnswerB = dialogue.AnswerB[0];
+            }
         }
     }
 

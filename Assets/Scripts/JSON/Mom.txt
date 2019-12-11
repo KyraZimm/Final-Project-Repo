@@ -1,6 +1,6 @@
 {
 	"Responses": [
-		"Well Hi, Sweetie. How was school today?",
+		"Well hi, Sweetie. How was school today?",
 		"Wow, you never ask me how my day was. Who are you and what did you do with Carey? Hahahahaha! Oh, my day was good. Nothing special. Cleaned up the house a bit, ran some errands, you know, the usual. ",
 		"It’s nice when things move smoothly, isn’t it? Need some of that every once in a while!",
 		"If you mean moving on from the mold behind the fridge, you betcha! Nothing gets past my steady hand! Hahaha!",
@@ -16,7 +16,8 @@
 		"…",
 		"…sigh. Ok. If it’s really important you can go into Jen-I mean-the storage room. Just make sure to lock the door behind you when you’re done. And don’t let your father in!",
 		"If it’s not that important, I’d prefer you leave it alone. It’s so messy in there, you’re bound to hurt yourself!",
-		"Is there something else you wanted to talk about, dear?"
+		"Is there something else you wanted to talk about, dear?",
+		""
 
 
 	],
@@ -35,13 +36,11 @@
 		"I think he wanted to finish patching up the hole.",
 		" ",
 		"Yes, it’s for school.",
+		"...Mom?",
+		"Thanks, Mom.",
 		" ",
-		" ",
-		" ",
-		"I need to go into Jenny’s room."
-
-
-
+		"I need to go into Jenny’s room.",
+		""
 	],
 
 	"AnswerB": [
@@ -62,7 +61,8 @@
 		" ",
 		" ",
 		" ",
-		"I need the key to the storage room."
+		"I need the key to the storage room.",
+		""
 
 	]
 
